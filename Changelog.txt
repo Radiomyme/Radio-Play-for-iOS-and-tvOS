@@ -1,0 +1,159 @@
+Changelog for Radio Play for iOS & tvOS :
+
+5.0 - September 2018
+(iOS) 
+- Ready for iOS 12
+- Ready for iPhone XS, XS Max & XR
+(tvOS) 
+- Ready for tvOS 12 (Improved Audio Quality)
+
+4.1.2 - July 2018
+(iOS) 
+- Getting ready for iOS 12 (5.0 incoming)
+- AdMob & Facebook updated Frameworks
+- Bug fixes
+(tvOS) 
+- Getting ready for tvOS 12 (Improved Audio Quality)
+
+4.1.1 - March 2018
+(iOS)
+- Remote DataBase improvements
+- Improved compatibility with iPhone X
+- New Player
+- New Home Page
+- UI Darker
+- Compatible with iOS 11.3
+(tvOS)
+- Improvements for AppleTV 4K HDR
+- Compatible with tvOS 11.3
+
+4.1 - January 2018
+(iOS) 
+- New Player Design (Album Art, Artist, Song Title, Facebook & Twitter and Apple Music)
+- New Home Design (Smaller rows, improved loading times)
+- Fixes and improvements 
+- Improvements for iPhone X
+- Video support in Landscape
+- Improved Station Default Album
+(tvOS) 
+- Improvements for AppleTV 4K (Logos and Icons)
+
+4.0.2 - October 2017
+(iOS) 
+- Fixes and improvements 
+- Improvements for iPhone X
+- Improved Station Default Album
+(tvOS) 
+- Improvements for AppleTV 4K
+
+4.0.1 - September 2017
+(iOS) 
+- Remote DataBase is Back
+- Improvements for iPhone X
+(tvOS) 
+- Improvements for AppleTV 4K
+
+4.0 - September 2017
+(iOS) 
+- Documentation now available online at dev.radiomyme.com
+- Search: Search in any radio using the search bar
+- Categories: Start to class your stations by categories
+- New design in the Home page
+- Optimised Album Art: now using iTunes
+- Optimised Player title when the data is not correctly encoded
+- Optimised Loading UI
+- Ready for iOS 11
+(tvOS) 
+- Improvements for tvOS 11
+- Fixed Server Issue
+
+3.1 - July 2017
+(iOS) 
+- We have optimised the player to make it start faster
+- Updated Google Admob Framework
+- Updated Facebook Ads Framework
+- Updated OneSignal Framework
+- New Google AdMob support (iOS 11)
+- Improvements for iOS 11 beta users
+- Share option: You can now use the current image of the player or the radio logo
+- New icons in the PlayerView
+- Safari is now used for Facebook, Twitter and Music. Allowing auto login, password support and cookies
+- Optimisation of the size of the icons in the PlayerView
+- Fixed Album Art in PlayerView (bug introduced in 3.0.1 if using Remote)
+- Fixed Remote bug if one station is used
+- Fixed Bugs in iOS 11
+- General optimisation
+- Categories in preview
+(tvOS) 
+- Improvements for tvOS 11
+(Documentation)
+- General Improvements
+
+3.0.1 - (6 March 2017)
+(iOS) 
+- Improvements for Volume Slider
+- More options available (Change the title displayed in the PlayerView, Activate LastFM or not, Activate the volume slider or not, ...) 
+- Support for m3u8
+- Updated AdMob Framework
+(tvOS) 
+- Added background audio
+- You can now directly upload the server file to test the app 
+- Some improvements.
+
+3.0 - (3rd Feb 2017)
+
+Introducing RadioPlay for tvOS :
+***
+- Add many stations as you like or Single Station
+- Compatible with tvOS 9 & 10
+- Adding Categories, Single Station Presentation, Home, Player and many more things
+- All PSD & Documentation included
+***
+- Fixed AdMob when no ads are available
+- Fixed Player Auto Start when the In App Purchase have been made
+- Added Player V2 (Optional)
+- Fixed Remote Playlist
+- Fixed Album Blur
+- Other some small fixes
+
+2.1 - (18th Jan 2017)
+
+- Push Notifications (OneSignal)
+- Fixed Volume Slider on iPad
+- Added one more icon for dedications
+- Fixed Google Banner interfering with InApp Purchase & Play Button
+- Fixed Share on iPad
+- Fixed LunchScreen on iPad
+- The listener can click on the name of the station or « now playing » to return to the Play Screen
+- Fixed Single Station mode
+- Fixed AdMob : The Player will start only at the end of the Interstitial
+
+2.0 - (3rd Jan 2017)
+
+- Improvements for remote station list
+- Improvements for InApp Purchase UI
+- Added share button in the PlayerView
+- Added specific Facebook & Twitter link in the PlayerView
+- New UI in the radio page
+- Added a update button in the settings
+- Fixed Tint color
+- Fixed Volume Slider
+- Fixed Album in PlayerView
+- Fixed ipv6 requirements
+- Fixed AdMob requirements
+
+1.2.1 - (8th Dec 2016)
+
+- In-App Purchase Fix while removing the ads
+
+1.2 - (1st Dec 2016)
+
+- In-App Purchase Support
+
+1.1 - (16th Nov 2016)
+
+- AdMob & FacebookAds Native Support
+
+1.0 - (10th Nov 2016)
+
+- Initial Release
