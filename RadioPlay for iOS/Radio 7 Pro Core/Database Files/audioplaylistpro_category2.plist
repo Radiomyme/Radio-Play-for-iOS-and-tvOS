@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemChildren</key>
+	<array>
+		<dict>
+			<key>Radio Name</key>
+			<string>Ibiza Global Radio</string>
+			<key>Radio Stream URL</key>
+			<string>http://ibizaglobalradio.streaming-pro.com:8024/;</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/ibizaglobalradio.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Dance - Electro</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Sunshine Live</string>
+			<key>Radio Stream URL</key>
+			<string>http://stream.sunshine-live.de/live/mp3-192/Webradio-Player/</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/sunshinelive.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>1 FM Top 40</string>
+			<key>Radio Stream URL</key>
+			<string>http://strm112.1.fm/top40_mobile_mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/1FMtop40.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string>https://www.Facebook ID.com/Topclubradio</string>
+			<key>Twitter ID</key>
+			<string>https://Twitter ID.com/topclubradio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Chart Hits FM</string>
+			<key>Radio Stream URL</key>
+			<string>http://charthits-high.rautemusik.fm/listen.pls</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/ChartHitsFM.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Dance - Electro</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Ibiza Sonica</string>
+			<key>Radio Stream URL</key>
+			<string>http://bit.ly/1TYRJHZ</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/ibizasonica.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>1 FM Trance</string>
+			<key>Radio Stream URL</key>
+			<string>http://strm112.1.fm/trance_mobile_mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/1FMTrance.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string>https://www.Facebook ID.com/Topclubradio</string>
+			<key>Twitter ID</key>
+			<string>topclubradio</string>
+		</dict>
+	</array>
+</dict>
+</plist>

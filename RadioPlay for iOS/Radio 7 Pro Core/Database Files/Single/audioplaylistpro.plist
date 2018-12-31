@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemChildren</key>
+	<array>
+		<dict>
+			<key>Radio Name</key>
+			<string>RTL</string>
+			<key>Radio Stream URL</key>
+			<string>http://streaming.radio.rtl.fr/rtl-1-44-96</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/RTL.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>RTL bouge</string>
+			<key>Facebook ID</key>
+			<string>282315205283</string>
+			<key>Twitter ID</key>
+			<string>RTLFrance</string>
+		</dict>
+	</array>
+</dict>
+</plist>

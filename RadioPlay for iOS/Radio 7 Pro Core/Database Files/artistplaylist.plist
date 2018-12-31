@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemChildrenArtist</key>
+	<array>
+		<dict>
+			<key>itemTitleArtist</key>
+			<string>Radiomyme</string>
+			<key>imageFilePathArtist</key>
+			<string>https://www.radiomyme.fr/IOS/13-13.jpg</string>
+			<key>subtitleArtist</key>
+			<string>Dance - Electro</string>
+		</dict>
+		<dict>
+			<key>itemTitleArtist</key>
+			<string>Radiomyme</string>
+			<key>imageFilePathArtist</key>
+			<string>https://www.radiomyme.fr/IOS/13-13.jpg</string>
+			<key>subtitleArtist</key>
+			<string>Dance - Electro</string>
+		</dict>
+	</array>
+</dict>
+</plist>
