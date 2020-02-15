@@ -82,7 +82,7 @@ static NSString* const kLastFMAPIKEY = @"0b50f9e072e81512eae02cb870a5353d";
           if ([artWork isKindOfClass:[NSString class]])
           {
               // Getting 500x500 artWork size
-              artWork = [artWork stringByReplacingOccurrencesOfString:@"100" withString:@"500"];
+              artWork = [artWork stringByReplacingOccurrencesOfString:@"100" withString:@"1000"];
               resultInfo.artworkURL = [NSURL URLWithString:artWork];
           }
           

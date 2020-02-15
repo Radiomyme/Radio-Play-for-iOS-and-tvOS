@@ -31,6 +31,99 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
 	[super dealloc];
 }
 
+//--------------------------------------
+//------------ GOOGLE ADMOB  -----------
+//--------------------------------------
+
+/// Tells the delegate an ad request loaded an ad.
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    NSLog(@"adViewDidReceiveAd");
+    [self addBannerViewToView:self.bannerView];
+    adView.alpha = 0;
+    [UIView animateWithDuration:1.0 animations:^{
+      adView.alpha = 1;
+    }];
+}
+
+/// Tells the delegate an ad request failed.
+- (void)adView:(GADBannerView *)adView
+    didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
+}
+
+/// Tells the delegate that a full-screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillPresentScreen");
+}
+
+/// Tells the delegate that the full-screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full-screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+    NSLog(@"adViewWillLeaveApplication");
+}
+
+- (void)addBannerViewToView:(UIView *)bannerView {
+  bannerView.translatesAutoresizingMaskIntoConstraints = NO;
+  [self.view addSubview:bannerView];
+  if (@available(ios 11.0, *)) {
+    // In iOS 11, we need to constrain the view to the safe area.
+    [self positionBannerViewFullWidthAtBottomOfSafeArea:bannerView];
+  } else {
+    // In lower iOS versions, safe area is not available so we use
+    // bottom layout guide and view edges.
+    [self positionBannerViewFullWidthAtBottomOfView:bannerView];
+  }
+}
+
+#pragma mark - view positioning
+
+- (void)positionBannerViewFullWidthAtBottomOfSafeArea:(UIView *_Nonnull)bannerView NS_AVAILABLE_IOS(11.0) {
+  // Position the banner. Stick it to the bottom of the Safe Area.
+  // Make it constrained to the edges of the safe area.
+  UILayoutGuide *guide = self.view.safeAreaLayoutGuide;
+
+  [NSLayoutConstraint activateConstraints:@[
+    [guide.leftAnchor constraintEqualToAnchor:bannerView.leftAnchor],
+    [guide.rightAnchor constraintEqualToAnchor:bannerView.rightAnchor],
+    [guide.bottomAnchor constraintEqualToAnchor:bannerView.bottomAnchor]
+  ]];
+}
+
+- (void)positionBannerViewFullWidthAtBottomOfView:(UIView *_Nonnull)bannerView {
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView
+                                                        attribute:NSLayoutAttributeLeading
+                                                        relatedBy:NSLayoutRelationEqual
+                                                           toItem:self.view
+                                                        attribute:NSLayoutAttributeLeading
+                                                       multiplier:1
+                                                         constant:0]];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView
+                                                        attribute:NSLayoutAttributeTrailing
+                                                        relatedBy:NSLayoutRelationEqual
+                                                           toItem:self.view
+                                                        attribute:NSLayoutAttributeTrailing
+                                                       multiplier:1
+                                                         constant:0]];
+  [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView
+                                                        attribute:NSLayoutAttributeBottom
+                                                        relatedBy:NSLayoutRelationEqual
+                                                           toItem:self.bottomLayoutGuide
+                                                        attribute:NSLayoutAttributeTop
+                                                       multiplier:1
+                                                         constant:0]];
+}
+
 #pragma mark UIViewController delegates
 
 - (void)viewDidLoad
@@ -96,6 +189,21 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
     //self.extendedLayoutIncludesOpaqueBars = YES;
     
     [self setupSearchBar];
+
+    // Google AdMob Banner - Home
+
+    if(GOOGLE_BANNER_HOME)
+    {
+        if(!areAdsRemoved)
+        {
+            self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+            [self addBannerViewToView:self.bannerView];
+            self.bannerView.adUnitID = Google_ad_banner_Home_ID;
+            self.bannerView.rootViewController = self;
+            [self.bannerView loadRequest:[GADRequest request]];
+            self.bannerView.delegate = self;
+        }
+    }
 }
 
 
@@ -285,10 +393,10 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
 {
     if (_didEnterForeground == YES)
     {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshPlayer" object:nil];
-        
         _didEnterForeground = NO;
     }
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshPlayer" object:nil];
     
     [self setHidesBottomBarWhenPushed: YES];
     
@@ -332,26 +440,45 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
 
 - (void)pushTwitterView:(NSNotification *)notification
 {
-    NSString *GetID = [NSString stringWithFormat:@"twitter://user?screen_name=%@", Twitter_URL];
-    NSURL *twitterURL = [NSURL URLWithString:GetID];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:twitterURL])
+    if(Use_Twitter)
     {
-        [[UIApplication sharedApplication] openURL:twitterURL];
+        NSString *GetID = [NSString stringWithFormat:@"twitter://user?screen_name=%@", Account_ID];
+        NSURL *twitterURL = [NSURL URLWithString:GetID];
+        
+        if ([[UIApplication sharedApplication] canOpenURL:twitterURL])
+        {
+            [[UIApplication sharedApplication] openURL:twitterURL];
+        }
+        else
+        {
+            NSString *DefaultURL = [NSString stringWithFormat:@"https://twitter.com/%@", Account_ID];
+            SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:DefaultURL] entersReaderIfAvailable:NO];
+            safariVC.delegate = self;
+            [self presentViewController:safariVC animated:NO completion:nil];
+        }
     }
     else
     {
-        NSString *DefaultURL = [NSString stringWithFormat:@"https://twitter.com/%@", Twitter_URL];
-        SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:DefaultURL] entersReaderIfAvailable:NO];
-        safariVC.delegate = self;
-        [self presentViewController:safariVC animated:NO completion:nil];
+        NSString *GetID = [NSString stringWithFormat:@"instagram://user?username=%@", Account_ID];
+        NSURL *instagramURL = [NSURL URLWithString:GetID];
+        
+        if ([[UIApplication sharedApplication] canOpenURL:instagramURL])
+        {
+            [[UIApplication sharedApplication] openURL:instagramURL];
+        }
+        else
+        {
+            NSString *DefaultURL = [NSString stringWithFormat:@"https://instagram.com/%@", Account_ID];
+            SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:DefaultURL] entersReaderIfAvailable:NO];
+            safariVC.delegate = self;
+            [self presentViewController:safariVC animated:NO completion:nil];
+        }
     }
-    
 }
 
 - (void)pushInstagramView:(NSNotification *)notification
 {
-    NSString *GetID = [NSString stringWithFormat:@"instagram://user?username=%@", Instagram_URL];
+    NSString *GetID = [NSString stringWithFormat:@"instagram://user?username=%@", Account_ID];
     NSURL *instagramURL = [NSURL URLWithString:GetID];
     
     if ([[UIApplication sharedApplication] canOpenURL:instagramURL])
@@ -360,7 +487,7 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
     }
     else
     {
-        NSString *DefaultURL = [NSString stringWithFormat:@"https://instagram.com/%@", Instagram_URL];
+        NSString *DefaultURL = [NSString stringWithFormat:@"https://instagram.com/%@", Account_ID];
         SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:DefaultURL] entersReaderIfAvailable:NO];
         safariVC.delegate = self;
         [self presentViewController:safariVC animated:NO completion:nil];
@@ -384,7 +511,7 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
 
 - (void)pushChatView:(NSNotification *)notification
 {
-    SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:Chat_URL] entersReaderIfAvailable:NO];
+    SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:open_music_URL] entersReaderIfAvailable:NO];
     
     //SFSafariViewController *safariVC = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:@"your url here"] entersReaderIfAvailable:NO];
     
@@ -467,7 +594,7 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
             [[NSNotificationCenter defaultCenter] postNotificationName:@"stopPlayer" object:nil];
             
             Facebook_URL = [item objectForKey:kFacebook];
-            Twitter_URL = [item objectForKey:kTwitter];
+            Account_ID = [item objectForKey:kTwitter];
             
             streamViewController = [[PlayerViewController alloc] initWithNibName:@"PlayerViewController" bundle:nil];
             
@@ -583,7 +710,7 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
         streamViewController.selectedStreamTitle = Station_Name1;
         streamViewController.selectedStreamImage = Station_Logo1;
         Facebook_URL = Station_Facebook1;
-        Twitter_URL = Station_Twitter1;
+        Account_ID = Station_Twitter1;
     }
     if([QUICK_ACTION_ENABLED isEqualToString:@"station2"])
     {
@@ -593,7 +720,7 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
         streamViewController.selectedStreamTitle = Station_Name2;
         streamViewController.selectedStreamImage = Station_Logo2;
         Facebook_URL = Station_Facebook2;
-        Twitter_URL = Station_Twitter2;
+        Account_ID = Station_Twitter2;
     }
     if([QUICK_ACTION_ENABLED isEqualToString:@"station3"])
     {
@@ -603,7 +730,7 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
         streamViewController.selectedStreamTitle = Station_Name3;
         streamViewController.selectedStreamImage = Station_Logo3;
         Facebook_URL = Station_Facebook3;
-        Twitter_URL = Station_Twitter3;
+        Account_ID = Station_Twitter3;
     }
     if([QUICK_ACTION_ENABLED isEqualToString:@"station4"])
     {
@@ -613,7 +740,7 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
         streamViewController.selectedStreamTitle = Station_Name4;
         streamViewController.selectedStreamImage = Station_Logo4;
         Facebook_URL = Station_Facebook4;
-        Twitter_URL = Station_Twitter4;
+        Account_ID = Station_Twitter4;
     }
     
     [self setHidesBottomBarWhenPushed: YES];
@@ -706,11 +833,11 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
     
     self.searchController=[[UISearchController alloc]initWithSearchResultsController:nil];
     self.searchController.searchResultsUpdater=self;
-    self.searchController.dimsBackgroundDuringPresentation=NO;
+    self.searchController.dimsBackgroundDuringPresentation= YES;
     self.searchController.searchBar.delegate=self;
     self.searchController.searchBar.translucent = YES;
     self.searchController.searchBar.tintColor = [UIColor whiteColor];
-    self.searchController.searchBar.barStyle = UIBarStyleBlack;
+    self.searchController.searchBar.barStyle = UIBarStyleBlackTranslucent;
     self.searchController.searchBar.barTintColor = [UIColor blackColor];
     self.myTableView.tableHeaderView=self.searchController.searchBar;
     self.definesPresentationContext=YES;
@@ -722,10 +849,12 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
     _isLocalEnabled = LOCAL_ENABLED;
     if(_isLocalEnabled && Enable_Categories)
     {
-        self.searchController.searchBar.scopeButtonTitles = @[@"Favorites", @"Electro", @"Techno", @"TV"];
+        self.searchController.searchBar.scopeButtonTitles = @[@"France", @"Electro", @"Techno", @"TV"];
+        [self.searchController.searchBar setScopeBarButtonTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+        [self.searchController.searchBar setScopeBarButtonTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
     }
     
-    [self.myTableView setContentOffset:CGPointMake(0,55)];
+    //[self.myTableView setContentOffset:CGPointMake(0,55)];
 }
 
 - (void)dissmissSearch

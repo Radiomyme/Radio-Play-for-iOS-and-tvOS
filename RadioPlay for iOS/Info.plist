@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>7.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -31,11 +31,13 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>11.0.1.1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
 	<string>1548475662112014</string>
 	<key>FacebookDisplayName</key>
 	<string>Radiomyme Play</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-4466685095115509~5892890271</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
@@ -59,6 +61,10 @@
 	<string>Advertisement would like to use bluetooth.</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Advertisement would like to create a calendar event.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app might use your location to display relevent ads</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app might use your location to display relevent ads</string>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
 	<key>NSMainNibFile~ipad</key>

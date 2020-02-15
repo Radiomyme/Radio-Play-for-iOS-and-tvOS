@@ -3,21 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		362139491DF6062A0007CC46 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362139481DF6062A0007CC46 /* CoreData.framework */; };
-		362304731E21A7FB00AD6129 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362304721E21A7FB00AD6129 /* OneSignal.framework */; };
 		362883121BDAD1D00053628A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362883111BDAD1D00053628A /* Launch Screen.storyboard */; };
-		362977EE21650C5300E4019A /* radiomyme StickerPackExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 362977ED21650C5200E4019A /* radiomyme StickerPackExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		362977FC21650C7A00E4019A /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = 362977FB21650C7900E4019A /* Stickers.xcstickers */; };
+		362E44EA232E9E740001BA3F /* speaker_low_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 362E44E8232E9E730001BA3F /* speaker_low_white.png */; };
+		362E44EB232E9E740001BA3F /* speaker_high_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 362E44E9232E9E740001BA3F /* speaker_high_white.png */; };
+		362E44F0232F80160001BA3F /* speaker_low_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362E44EC232F80130001BA3F /* speaker_low_white@2x.png */; };
+		362E44F1232F80160001BA3F /* speaker_high_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362E44ED232F80140001BA3F /* speaker_high_white@3x.png */; };
+		362E44F2232F80160001BA3F /* speaker_high_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362E44EE232F80150001BA3F /* speaker_high_white@2x.png */; };
+		362E44F3232F80160001BA3F /* speaker_low_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362E44EF232F80160001BA3F /* speaker_low_white@3x.png */; };
 		363694971F1D623500E63895 /* audioplaylistpro_category2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 363694941F1D623500E63895 /* audioplaylistpro_category2.plist */; };
 		363694981F1D623500E63895 /* audioplaylistpro_category3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 363694951F1D623500E63895 /* audioplaylistpro_category3.plist */; };
 		363694991F1D623500E63895 /* audioplaylistpro_category1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 363694961F1D623500E63895 /* audioplaylistpro_category1.plist */; };
-		3637B263206978F3004B83FB /* PopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3637B262206978F3004B83FB /* PopUp.xib */; };
-		3637B266206979ED004B83FB /* PopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3637B264206979ED004B83FB /* PopUp.m */; };
+		363A6B372396C2F800054F71 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E00299238A9FCC00A3FC6D /* GoogleMobileAds.framework */; };
 		364892661E0BF55C0079F332 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 364892631E0BF55C0079F332 /* share.png */; };
 		364892671E0BF55C0079F332 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364892641E0BF55C0079F332 /* share@2x.png */; };
 		364892681E0BF55C0079F332 /* share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364892651E0BF55C0079F332 /* share@3x.png */; };
@@ -62,7 +64,6 @@
 		36532A951DD248AB006FBDA6 /* volume_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 36532A621DD248AB006FBDA6 /* volume_up.png */; };
 		36532A961DD248AB006FBDA6 /* volume_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36532A631DD248AB006FBDA6 /* volume_up@2x.png */; };
 		36532A971DD248AB006FBDA6 /* volume_up@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36532A641DD248AB006FBDA6 /* volume_up@3x.png */; };
-		365C97681DD7269200E01A7D /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365C97661DD7269200E01A7D /* FBAudienceNetwork.framework */; };
 		3663090C1A8BB0920074ACA6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3663090B1A8BB0920074ACA6 /* MainWindow.xib */; };
 		367BFBC11DA6A804009F57E8 /* SVModalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 367BFBBD1DA6A804009F57E8 /* SVModalWebViewController.m */; };
 		367BFBC21DA6A804009F57E8 /* SVWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 367BFBBE1DA6A804009F57E8 /* SVWebViewController.bundle */; };
@@ -78,14 +79,29 @@
 		367BFBDC1DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 367BFBD81DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome.m */; };
 		367BFBDD1DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 367BFBD91DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome@2x.png */; };
 		3689727D1BB58CF40083AE46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3689727C1BB58CF40083AE46 /* InfoPlist.strings */; };
-		3696D9621E690D74005D033C /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696D9611E690D74005D033C /* GoogleMobileAds.framework */; };
+		369052B323B629510059785A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 369052B223B629510059785A /* GoogleService-Info.plist */; };
 		369D51761DEC9F0800788065 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369D51751DEC9F0800788065 /* PlayerViewController.xib */; };
 		369D51791DEC9F4700788065 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369D51781DEC9F4700788065 /* PlayerViewController.m */; };
 		369D517D1DECA37100788065 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 369D517A1DECA37100788065 /* chat.png */; };
 		369D517E1DECA37100788065 /* chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 369D517B1DECA37100788065 /* chat@2x.png */; };
 		369D517F1DECA37100788065 /* chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 369D517C1DECA37100788065 /* chat@3x.png */; };
 		36BA389C1A6861CE00AB7D54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36BA389B1A6861CE00AB7D54 /* Images.xcassets */; };
+		36CA85B9232969960074ECF4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64205891162CF67D00921914 /* MediaPlayer.framework */; };
+		36CA85C2232A5FC10074ECF4 /* facebook_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85BB232A5FBC0074ECF4 /* facebook_white.png */; };
+		36CA85C3232A5FC10074ECF4 /* twitter_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85BC232A5FBD0074ECF4 /* twitter_white.png */; };
+		36CA85C4232A5FC10074ECF4 /* snapchat_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85BD232A5FBE0074ECF4 /* snapchat_white.png */; };
+		36CA85C5232A5FC10074ECF4 /* messenger_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85BE232A5FBF0074ECF4 /* messenger_white.png */; };
+		36CA85C6232A5FC10074ECF4 /* instagram_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85BF232A5FC00074ECF4 /* instagram_white.png */; };
+		36CA85C7232A5FC10074ECF4 /* airplay_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85C0232A5FC10074ECF4 /* airplay_white.png */; };
+		36CA85CD232A609E0074ECF4 /* share_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85CC232A609E0074ECF4 /* share_white.png */; };
+		36CA85CF232A63350074ECF4 /* US-UK_Apple_Music_Lockup_RGB_wht.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85CE232A63340074ECF4 /* US-UK_Apple_Music_Lockup_RGB_wht.png */; };
+		36CA85D1232A67BA0074ECF4 /* remove_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85D0232A67BA0074ECF4 /* remove_white.png */; };
+		36CA85D3232A845A0074ECF4 /* open_website.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CA85D2232A845A0074ECF4 /* open_website.png */; };
 		36D069771DECB2C00025B7B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D069761DECB2C00025B7B7 /* StoreKit.framework */; };
+		36D2CC572396CCD20074AEE6 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D2CC562396CCD20074AEE6 /* GoogleAppMeasurement.framework */; };
+		36D2CC5C2396CD5B0074AEE6 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D2CC5A2396CD5B0074AEE6 /* GoogleUtilities.framework */; };
+		36D2CC5D2396CD5B0074AEE6 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D2CC5B2396CD5B0074AEE6 /* nanopb.framework */; };
+		36E0029A238A9FCC00A3FC6D /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E00299238A9FCC00A3FC6D /* GoogleMobileAds.framework */; };
 		36E60D751E13DA9B00B3375B /* QuickAction_Station3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36E60D711E13DA9B00B3375B /* QuickAction_Station3@2x.png */; };
 		36E60D761E13DA9B00B3375B /* QuickAction_Station3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36E60D721E13DA9B00B3375B /* QuickAction_Station3@3x.png */; };
 		36E60D781E13DA9B00B3375B /* QuickAction_Station4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36E60D741E13DA9B00B3375B /* QuickAction_Station4@3x.png */; };
@@ -94,6 +110,7 @@
 		36F6E003200A67EE00C75EA8 /* LaunchScreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F6E000200A67EE00C75EA8 /* LaunchScreen@3x.png */; };
 		36F6E008200A6F1F00C75EA8 /* QuickAction_Station4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F6E004200A6F1E00C75EA8 /* QuickAction_Station4@2x.png */; };
 		36F6E00B200A6F1F00C75EA8 /* QuickAction_Station4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36F6E007200A6F1F00C75EA8 /* QuickAction_Station4@3x.png */; };
+		36F91F4722A2E6760059AFF7 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F91F4622A2E6760059AFF7 /* OneSignal.framework */; };
 		640249A8181B735D00570B74 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640249A7181B735D00570B74 /* CoreImage.framework */; };
 		641D5F261864C4B600383568 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641D5F251864C4B600383568 /* AVFoundation.framework */; };
 		641D5F281864C4C900383568 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641D5F271864C4C900383568 /* MessageUI.framework */; };
@@ -147,46 +164,21 @@
 		FCE5ED9D1F43621600621B87 /* ClubOne1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCE5ED9B1F43621600621B87 /* ClubOne1.jpg */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		362977EF21650C5300E4019A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 362977EC21650C5200E4019A;
-			remoteInfo = "radiomyme StickerPackExtension";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		362977F721650C5300E4019A /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				362977EE21650C5300E4019A /* radiomyme StickerPackExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1D6058910D05DD3D006BFB54 /* Radio Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		362139481DF6062A0007CC46 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		362304721E21A7FB00AD6129 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = "Radio 7 Pro Core/Ads/OneSignal.framework"; sourceTree = "<group>"; };
 		362304741E21A82500AD6129 /* Radio Play.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio Play.entitlements"; sourceTree = "<group>"; };
 		362883111BDAD1D00053628A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		362977EA21650C5200E4019A /* radiomyme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radiomyme.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		362977ED21650C5200E4019A /* radiomyme StickerPackExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "radiomyme StickerPackExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		362977FB21650C7900E4019A /* Stickers.xcstickers */ = {isa = PBXFileReference; lastKnownFileType = folder.stickers; path = Stickers.xcstickers; sourceTree = "<group>"; };
+		362E44E8232E9E730001BA3F /* speaker_low_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speaker_low_white.png; path = Images/speaker_low_white.png; sourceTree = SOURCE_ROOT; };
+		362E44E9232E9E740001BA3F /* speaker_high_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speaker_high_white.png; path = Images/speaker_high_white.png; sourceTree = SOURCE_ROOT; };
+		362E44EC232F80130001BA3F /* speaker_low_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker_low_white@2x.png"; path = "Images/speaker_low_white@2x.png"; sourceTree = SOURCE_ROOT; };
+		362E44ED232F80140001BA3F /* speaker_high_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker_high_white@3x.png"; path = "Images/speaker_high_white@3x.png"; sourceTree = SOURCE_ROOT; };
+		362E44EE232F80150001BA3F /* speaker_high_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker_high_white@2x.png"; path = "Images/speaker_high_white@2x.png"; sourceTree = SOURCE_ROOT; };
+		362E44EF232F80160001BA3F /* speaker_low_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speaker_low_white@3x.png"; path = "Images/speaker_low_white@3x.png"; sourceTree = SOURCE_ROOT; };
 		363694941F1D623500E63895 /* audioplaylistpro_category2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = audioplaylistpro_category2.plist; path = "Radio 7 Pro Core/Database Files/audioplaylistpro_category2.plist"; sourceTree = SOURCE_ROOT; };
 		363694951F1D623500E63895 /* audioplaylistpro_category3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = audioplaylistpro_category3.plist; path = "Radio 7 Pro Core/Database Files/audioplaylistpro_category3.plist"; sourceTree = SOURCE_ROOT; };
 		363694961F1D623500E63895 /* audioplaylistpro_category1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = audioplaylistpro_category1.plist; path = "Radio 7 Pro Core/Database Files/audioplaylistpro_category1.plist"; sourceTree = SOURCE_ROOT; };
-		3637B262206978F3004B83FB /* PopUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopUp.xib; path = "Radio 7 Pro Core/Xibs/PopUp.xib"; sourceTree = SOURCE_ROOT; };
-		3637B264206979ED004B83FB /* PopUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopUp.m; path = "Radio 7 Pro Core/Class Files/PopUp.m"; sourceTree = SOURCE_ROOT; };
-		3637B265206979ED004B83FB /* PopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopUp.h; path = "Radio 7 Pro Core/Class Files/PopUp.h"; sourceTree = SOURCE_ROOT; };
 		364892631E0BF55C0079F332 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share.png; path = "Radio 7 Pro Core/Images/share.png"; sourceTree = SOURCE_ROOT; };
 		364892641E0BF55C0079F332 /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@2x.png"; path = "Radio 7 Pro Core/Images/share@2x.png"; sourceTree = SOURCE_ROOT; };
 		364892651E0BF55C0079F332 /* share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@3x.png"; path = "Radio 7 Pro Core/Images/share@3x.png"; sourceTree = SOURCE_ROOT; };
@@ -230,7 +222,6 @@
 		36532A621DD248AB006FBDA6 /* volume_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = volume_up.png; path = "Radio 7 Pro Core/Images/volume_up.png"; sourceTree = SOURCE_ROOT; };
 		36532A631DD248AB006FBDA6 /* volume_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volume_up@2x.png"; path = "Radio 7 Pro Core/Images/volume_up@2x.png"; sourceTree = SOURCE_ROOT; };
 		36532A641DD248AB006FBDA6 /* volume_up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volume_up@3x.png"; path = "Radio 7 Pro Core/Images/volume_up@3x.png"; sourceTree = SOURCE_ROOT; };
-		365C97661DD7269200E01A7D /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = "Radio 7 Pro Core/Ads/FBAudienceNetwork.framework"; sourceTree = "<group>"; };
 		3663090B1A8BB0920074ACA6 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		367BFBBC1DA6A804009F57E8 /* SVModalWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVModalWebViewController.h; path = "Radio 7 Pro Core/Vendors/SVWebViewController/SVModalWebViewController.h"; sourceTree = SOURCE_ROOT; };
 		367BFBBD1DA6A804009F57E8 /* SVModalWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVModalWebViewController.m; path = "Radio 7 Pro Core/Vendors/SVWebViewController/SVModalWebViewController.m"; sourceTree = SOURCE_ROOT; };
@@ -251,7 +242,7 @@
 		367BFBD81DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVWebViewControllerActivityChrome.m; path = "Radio 7 Pro Core/Vendors/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome.m"; sourceTree = SOURCE_ROOT; };
 		367BFBD91DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SVWebViewControllerActivityChrome@2x.png"; path = "Radio 7 Pro Core/Vendors/SVWebViewController/UIActivities/Chrome/SVWebViewControllerActivityChrome@2x.png"; sourceTree = SOURCE_ROOT; };
 		3689727C1BB58CF40083AE46 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		3696D9611E690D74005D033C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Radio 7 Pro Core/Ads/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		369052B223B629510059785A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		369D51751DEC9F0800788065 /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = "Radio 7 Pro Core/Xibs/PlayerViewController.xib"; sourceTree = SOURCE_ROOT; };
 		369D51771DEC9F4700788065 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerViewController.h; path = "Radio 7 Pro Core/Class Files/PlayerViewController.h"; sourceTree = SOURCE_ROOT; };
 		369D51781DEC9F4700788065 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerViewController.m; path = "Radio 7 Pro Core/Class Files/PlayerViewController.m"; sourceTree = SOURCE_ROOT; };
@@ -259,7 +250,21 @@
 		369D517B1DECA37100788065 /* chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat@2x.png"; path = "Radio 7 Pro Core/Images/chat@2x.png"; sourceTree = SOURCE_ROOT; };
 		369D517C1DECA37100788065 /* chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat@3x.png"; path = "Radio 7 Pro Core/Images/chat@3x.png"; sourceTree = SOURCE_ROOT; };
 		36BA389B1A6861CE00AB7D54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Radiomyme/Images.xcassets; sourceTree = "<group>"; };
+		36CA85BB232A5FBC0074ECF4 /* facebook_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_white.png; path = Images/facebook_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85BC232A5FBD0074ECF4 /* twitter_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter_white.png; path = Images/twitter_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85BD232A5FBE0074ECF4 /* snapchat_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapchat_white.png; path = Images/snapchat_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85BE232A5FBF0074ECF4 /* messenger_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = messenger_white.png; path = Images/messenger_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85BF232A5FC00074ECF4 /* instagram_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagram_white.png; path = Images/instagram_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85C0232A5FC10074ECF4 /* airplay_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = airplay_white.png; path = Images/airplay_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85CC232A609E0074ECF4 /* share_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share_white.png; path = Images/share_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85CE232A63340074ECF4 /* US-UK_Apple_Music_Lockup_RGB_wht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "US-UK_Apple_Music_Lockup_RGB_wht.png"; path = "Images/US-UK_Apple_Music_Lockup_RGB_wht.png"; sourceTree = SOURCE_ROOT; };
+		36CA85D0232A67BA0074ECF4 /* remove_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = remove_white.png; path = Images/remove_white.png; sourceTree = SOURCE_ROOT; };
+		36CA85D2232A845A0074ECF4 /* open_website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = open_website.png; path = Images/open_website.png; sourceTree = SOURCE_ROOT; };
 		36D069761DECB2C00025B7B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		36D2CC562396CCD20074AEE6 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "Radio 7 Pro Core/Ads/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		36D2CC5A2396CD5B0074AEE6 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "Radio 7 Pro Core/Ads/GoogleUtilities.framework"; sourceTree = "<group>"; };
+		36D2CC5B2396CD5B0074AEE6 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "Radio 7 Pro Core/Ads/nanopb.framework"; sourceTree = "<group>"; };
+		36E00299238A9FCC00A3FC6D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Radio 7 Pro Core/Ads/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		36E60D711E13DA9B00B3375B /* QuickAction_Station3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "QuickAction_Station3@2x.png"; path = "Radio 7 Pro Core/Images/QuickAction_Station3@2x.png"; sourceTree = SOURCE_ROOT; };
 		36E60D721E13DA9B00B3375B /* QuickAction_Station3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "QuickAction_Station3@3x.png"; path = "Radio 7 Pro Core/Images/QuickAction_Station3@3x.png"; sourceTree = SOURCE_ROOT; };
 		36E60D741E13DA9B00B3375B /* QuickAction_Station4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "QuickAction_Station4@3x.png"; path = "Radio 7 Pro Core/Images/QuickAction_Station4@3x.png"; sourceTree = SOURCE_ROOT; };
@@ -268,6 +273,7 @@
 		36F6E000200A67EE00C75EA8 /* LaunchScreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LaunchScreen@3x.png"; path = "Radio 7 Pro Core/Images/LaunchScreen@3x.png"; sourceTree = SOURCE_ROOT; };
 		36F6E004200A6F1E00C75EA8 /* QuickAction_Station4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "QuickAction_Station4@2x.png"; path = "Radio 7 Pro Core/Images/QuickAction_Station4@2x.png"; sourceTree = SOURCE_ROOT; };
 		36F6E007200A6F1F00C75EA8 /* QuickAction_Station4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "QuickAction_Station4@3x.png"; path = "Radio 7 Pro Core/Images/QuickAction_Station4@3x.png"; sourceTree = SOURCE_ROOT; };
+		36F91F4622A2E6760059AFF7 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = "Radio 7 Pro Core/Ads/OneSignal.framework"; sourceTree = "<group>"; };
 		531F16910D63677B003D33FB /* Radio Play_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Radio Play_Prefix.pch"; sourceTree = "<group>"; };
 		640249A7181B735D00570B74 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		641D5F211864C47E00383568 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -367,25 +373,29 @@
 				641D5F261864C4B600383568 /* AVFoundation.framework in Frameworks */,
 				64B2AA5F1A6784FC00E9BD60 /* CoreTelephony.framework in Frameworks */,
 				362139491DF6062A0007CC46 /* CoreData.framework in Frameworks */,
+				36F91F4722A2E6760059AFF7 /* OneSignal.framework in Frameworks */,
 				365221661C98BAB50061AD3E /* CoreMotion.framework in Frameworks */,
-				362304731E21A7FB00AD6129 /* OneSignal.framework in Frameworks */,
 				365221641C98BAA60061AD3E /* AdSupport.framework in Frameworks */,
-				365C97681DD7269200E01A7D /* FBAudienceNetwork.framework in Frameworks */,
 				64205894162CF68300921914 /* AudioToolbox.framework in Frameworks */,
 				64205898162CF69A00921914 /* CFNetwork.framework in Frameworks */,
 				64205890162CF65500921914 /* CoreGraphics.framework in Frameworks */,
 				640249A8181B735D00570B74 /* CoreImage.framework in Frameworks */,
 				64B2AA5B1A67849400E9BD60 /* EventKit.framework in Frameworks */,
 				64B2AA5D1A6784AD00E9BD60 /* EventKitUI.framework in Frameworks */,
-				3696D9621E690D74005D033C /* GoogleMobileAds.framework in Frameworks */,
 				6420588C162CF64200921914 /* Foundation.framework in Frameworks */,
+				36D2CC5D2396CD5B0074AEE6 /* nanopb.framework in Frameworks */,
+				36E0029A238A9FCC00A3FC6D /* GoogleMobileAds.framework in Frameworks */,
 				64C9A3DA1861F25B0093D9A8 /* ImageIO.framework in Frameworks */,
 				64205892162CF67D00921914 /* MediaPlayer.framework in Frameworks */,
 				36D069771DECB2C00025B7B7 /* StoreKit.framework in Frameworks */,
+				36D2CC572396CCD20074AEE6 /* GoogleAppMeasurement.framework in Frameworks */,
 				641D5F281864C4C900383568 /* MessageUI.framework in Frameworks */,
+				363A6B372396C2F800054F71 /* GoogleMobileAds.framework in Frameworks */,
 				64BE601718A7462700699659 /* libxml2.dylib in Frameworks */,
 				64205896162CF68D00921914 /* QuartzCore.framework in Frameworks */,
 				6420589A162CF6A900921914 /* SystemConfiguration.framework in Frameworks */,
+				36CA85B9232969960074ECF4 /* MediaPlayer.framework in Frameworks */,
+				36D2CC5C2396CD5B0074AEE6 /* GoogleUtilities.framework in Frameworks */,
 				6420588E162CF64C00921914 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,8 +407,6 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Radio Play.app */,
-				362977EA21650C5200E4019A /* radiomyme.app */,
-				362977ED21650C5200E4019A /* radiomyme StickerPackExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,7 +416,6 @@
 			children = (
 				362304741E21A82500AD6129 /* Radio Play.entitlements */,
 				36BA389B1A6861CE00AB7D54 /* Images.xcassets */,
-				362977FB21650C7900E4019A /* Stickers.xcstickers */,
 				6464939C183673E30090ADCF /* Radio Play Core */,
 				29B97317FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -425,6 +432,7 @@
 				64649405183675B80090ADCF /* Main Window */,
 				531F16910D63677B003D33FB /* Radio Play_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				369052B223B629510059785A /* GoogleService-Info.plist */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				3689727C1BB58CF40083AE46 /* InfoPlist.strings */,
 			);
@@ -434,11 +442,13 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3696D9611E690D74005D033C /* GoogleMobileAds.framework */,
-				362304721E21A7FB00AD6129 /* OneSignal.framework */,
+				36D2CC562396CCD20074AEE6 /* GoogleAppMeasurement.framework */,
+				36F91F4622A2E6760059AFF7 /* OneSignal.framework */,
+				36D2CC5A2396CD5B0074AEE6 /* GoogleUtilities.framework */,
+				36D2CC5B2396CD5B0074AEE6 /* nanopb.framework */,
+				36E00299238A9FCC00A3FC6D /* GoogleMobileAds.framework */,
 				362139481DF6062A0007CC46 /* CoreData.framework */,
 				36D069761DECB2C00025B7B7 /* StoreKit.framework */,
-				365C97661DD7269200E01A7D /* FBAudienceNetwork.framework */,
 				365221651C98BAB50061AD3E /* CoreMotion.framework */,
 				641D5F211864C47E00383568 /* AdSupport.framework */,
 				64205893162CF68300921914 /* AudioToolbox.framework */,
@@ -537,8 +547,6 @@
 		6464939D183673E30090ADCF /* Class Files */ = {
 			isa = PBXGroup;
 			children = (
-				3637B265206979ED004B83FB /* PopUp.h */,
-				3637B264206979ED004B83FB /* PopUp.m */,
 				6464947E1836AD6E0090ADCF /* AutoScrollLabel.h */,
 				6464947F1836AD6E0090ADCF /* AutoScrollLabel.m */,
 				64C9A3D61861EEA70093D9A8 /* CustomTableCell.h */,
@@ -566,6 +574,22 @@
 		646493AD183673E30090ADCF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				362E44EE232F80150001BA3F /* speaker_high_white@2x.png */,
+				362E44ED232F80140001BA3F /* speaker_high_white@3x.png */,
+				362E44EC232F80130001BA3F /* speaker_low_white@2x.png */,
+				362E44EF232F80160001BA3F /* speaker_low_white@3x.png */,
+				362E44E9232E9E740001BA3F /* speaker_high_white.png */,
+				362E44E8232E9E730001BA3F /* speaker_low_white.png */,
+				36CA85C0232A5FC10074ECF4 /* airplay_white.png */,
+				36CA85CE232A63340074ECF4 /* US-UK_Apple_Music_Lockup_RGB_wht.png */,
+				36CA85D2232A845A0074ECF4 /* open_website.png */,
+				36CA85BB232A5FBC0074ECF4 /* facebook_white.png */,
+				36CA85D0232A67BA0074ECF4 /* remove_white.png */,
+				36CA85BF232A5FC00074ECF4 /* instagram_white.png */,
+				36CA85CC232A609E0074ECF4 /* share_white.png */,
+				36CA85BE232A5FBF0074ECF4 /* messenger_white.png */,
+				36CA85BD232A5FBE0074ECF4 /* snapchat_white.png */,
+				36CA85BC232A5FBD0074ECF4 /* twitter_white.png */,
 				36532A4F1DD248AB006FBDA6 /* QuickAction_Station1@2x.png */,
 				36532A501DD248AB006FBDA6 /* QuickAction_Station1@3x.png */,
 				36532A511DD248AB006FBDA6 /* QuickAction_Station2@2x.png */,
@@ -643,7 +667,6 @@
 			children = (
 				64C9A3D41861EE990093D9A8 /* CustomTableCell.xib */,
 				369D51751DEC9F0800788065 /* PlayerViewController.xib */,
-				3637B262206978F3004B83FB /* PopUp.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -829,38 +852,6 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Radio Play.app */;
 			productType = "com.apple.product-type.application";
 		};
-		362977E921650C5200E4019A /* radiomyme */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 362977F821650C5300E4019A /* Build configuration list for PBXNativeTarget "radiomyme" */;
-			buildPhases = (
-				362977E821650C5200E4019A /* Resources */,
-				362977F721650C5300E4019A /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				362977F021650C5300E4019A /* PBXTargetDependency */,
-			);
-			name = radiomyme;
-			productName = radiomyme;
-			productReference = 362977EA21650C5200E4019A /* radiomyme.app */;
-			productType = "com.apple.product-type.application.messages";
-		};
-		362977EC21650C5200E4019A /* radiomyme StickerPackExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 362977F421650C5300E4019A /* Build configuration list for PBXNativeTarget "radiomyme StickerPackExtension" */;
-			buildPhases = (
-				362977EB21650C5200E4019A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "radiomyme StickerPackExtension";
-			productName = "radiomyme StickerPackExtension";
-			productReference = 362977ED21650C5200E4019A /* radiomyme StickerPackExtension.appex */;
-			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -884,27 +875,13 @@
 							};
 						};
 					};
-					362977E921650C5200E4019A = {
-						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = 8A4M4QND2E;
-						ProvisioningStyle = Automatic;
-					};
-					362977EC21650C5200E4019A = {
-						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = 8A4M4QND2E;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Radio Play" */;
-			compatibilityVersion = "Xcode 6.3";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
 				en,
 				da,
 				"es-ES",
@@ -913,14 +890,14 @@
 				ja,
 				"zh-Hans",
 				"zh-Hant",
+				de,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Toolbar */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Radio Play */,
-				362977E921650C5200E4019A /* radiomyme */,
-				362977EC21650C5200E4019A /* radiomyme StickerPackExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -935,17 +912,21 @@
 				36532A811DD248AB006FBDA6 /* playbtn@3x.png in Resources */,
 				36532A901DD248AB006FBDA6 /* twittersel@2x.png in Resources */,
 				364892681E0BF55C0079F332 /* share@3x.png in Resources */,
+				36CA85C7232A5FC10074ECF4 /* airplay_white.png in Resources */,
 				3663090C1A8BB0920074ACA6 /* MainWindow.xib in Resources */,
 				363694971F1D623500E63895 /* audioplaylistpro_category2.plist in Resources */,
+				362E44EA232E9E740001BA3F /* speaker_low_white.png in Resources */,
 				36E60D781E13DA9B00B3375B /* QuickAction_Station4@3x.png in Resources */,
 				36532A7C1DD248AB006FBDA6 /* pausebtn.png in Resources */,
 				36532A941DD248AB006FBDA6 /* volume_down@3x.png in Resources */,
 				36532A7A1DD248AB006FBDA6 /* facebooksel@2x.png in Resources */,
+				36CA85C2232A5FC10074ECF4 /* facebook_white.png in Resources */,
+				36CA85C3232A5FC10074ECF4 /* twitter_white.png in Resources */,
 				36532A911DD248AB006FBDA6 /* twittersel@3x.png in Resources */,
-				3637B263206978F3004B83FB /* PopUp.xib in Resources */,
 				36532A871DD248AB006FBDA6 /* radio@2x.png in Resources */,
 				367BFBD11DA6A8C0009F57E8 /* SVWebViewControllerActivitySafari-iPad@2x.png in Resources */,
 				36532A7F1DD248AB006FBDA6 /* playbtn.png in Resources */,
+				362E44F0232F80160001BA3F /* speaker_low_white@2x.png in Resources */,
 				36F6E002200A67EE00C75EA8 /* LaunchScreen@2x.png in Resources */,
 				36532A891DD248AB006FBDA6 /* slider_ball1.png in Resources */,
 				36F6E008200A6F1F00C75EA8 /* QuickAction_Station4@2x.png in Resources */,
@@ -967,8 +948,11 @@
 				367BFBC51DA6A850009F57E8 /* SVWebViewController.strings in Resources */,
 				369D517D1DECA37100788065 /* chat.png in Resources */,
 				36532A841DD248AB006FBDA6 /* QuickAction_Station2@2x.png in Resources */,
+				362E44F3232F80160001BA3F /* speaker_low_white@3x.png in Resources */,
 				36E60D761E13DA9B00B3375B /* QuickAction_Station3@3x.png in Resources */,
 				364892671E0BF55C0079F332 /* share@2x.png in Resources */,
+				362E44EB232E9E740001BA3F /* speaker_high_white.png in Resources */,
+				36CA85D1232A67BA0074ECF4 /* remove_white.png in Resources */,
 				363694991F1D623500E63895 /* audioplaylistpro_category1.plist in Resources */,
 				36532A681DD248AB006FBDA6 /* bufferingbg.png in Resources */,
 				36532A931DD248AB006FBDA6 /* volume_down@2x.png in Resources */,
@@ -976,29 +960,37 @@
 				64E1F3FC18AC8BE50067D297 /* audioplaylistpro.plist in Resources */,
 				36532A831DD248AB006FBDA6 /* QuickAction_Station1@3x.png in Resources */,
 				FCE5ED9D1F43621600621B87 /* ClubOne1.jpg in Resources */,
+				362E44F2232F80160001BA3F /* speaker_high_white@2x.png in Resources */,
 				36BA389C1A6861CE00AB7D54 /* Images.xcassets in Resources */,
 				367BFBDD1DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome@2x.png in Resources */,
 				36532A791DD248AB006FBDA6 /* facebooksel.png in Resources */,
 				36E60D751E13DA9B00B3375B /* QuickAction_Station3@2x.png in Resources */,
 				36532A7E1DD248AB006FBDA6 /* pausebtn@3x.png in Resources */,
+				36CA85CF232A63350074ECF4 /* US-UK_Apple_Music_Lockup_RGB_wht.png in Resources */,
 				36532A851DD248AB006FBDA6 /* QuickAction_Station2@3x.png in Resources */,
 				362883121BDAD1D00053628A /* Launch Screen.storyboard in Resources */,
 				36532A741DD248AB006FBDA6 /* defaultalbum@2x.png in Resources */,
 				36532A661DD248AB006FBDA6 /* about@2x.png in Resources */,
 				36F6E001200A67EE00C75EA8 /* LaunchScreen.png in Resources */,
+				369052B323B629510059785A /* GoogleService-Info.plist in Resources */,
 				36532A8B1DD248AB006FBDA6 /* slider_ball1@3x.png in Resources */,
 				36532A651DD248AB006FBDA6 /* about.png in Resources */,
 				36532A671DD248AB006FBDA6 /* about@3x.png in Resources */,
 				36532A6B1DD248AB006FBDA6 /* chevron@2x.png in Resources */,
+				36CA85CD232A609E0074ECF4 /* share_white.png in Resources */,
 				367BFBD01DA6A8C0009F57E8 /* SVWebViewControllerActivitySafari-iPad.png in Resources */,
 				FCE5ED9C1F43621600621B87 /* Club1.jpg in Resources */,
+				362E44F1232F80160001BA3F /* speaker_high_white@3x.png in Resources */,
 				36F6E003200A67EE00C75EA8 /* LaunchScreen@3x.png in Resources */,
 				36532A731DD248AB006FBDA6 /* defaultalbum.png in Resources */,
 				6464947A1836AD410090ADCF /* PlayerDB.plist in Resources */,
 				3689727D1BB58CF40083AE46 /* InfoPlist.strings in Resources */,
 				36532A6A1DD248AB006FBDA6 /* chevron.png in Resources */,
+				36CA85C5232A5FC10074ECF4 /* messenger_white.png in Resources */,
 				367BFBDB1DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome-iPad@2x.png in Resources */,
-				362977FC21650C7A00E4019A /* Stickers.xcstickers in Resources */,
+				36CA85C6232A5FC10074ECF4 /* instagram_white.png in Resources */,
+				36CA85C4232A5FC10074ECF4 /* snapchat_white.png in Resources */,
+				36CA85D3232A845A0074ECF4 /* open_website.png in Resources */,
 				36532A8A1DD248AB006FBDA6 /* slider_ball1@2x.png in Resources */,
 				36532A881DD248AB006FBDA6 /* radio@3x.png in Resources */,
 				367BFBDA1DA6A8D5009F57E8 /* SVWebViewControllerActivityChrome-iPad.png in Resources */,
@@ -1007,20 +999,6 @@
 				36532A801DD248AB006FBDA6 /* playbtn@2x.png in Resources */,
 				369D51761DEC9F0800788065 /* PlayerViewController.xib in Resources */,
 				369D517E1DECA37100788065 /* chat@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		362977E821650C5200E4019A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		362977EB21650C5200E4019A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1061,7 +1039,6 @@
 				64D5BA2818AC8CB700C88057 /* SDWebImageDownloader.m in Sources */,
 				64C9A3D81861EEA70093D9A8 /* CustomTableCell.m in Sources */,
 				646494801836AD6E0090ADCF /* AutoScrollLabel.m in Sources */,
-				3637B266206979ED004B83FB /* PopUp.m in Sources */,
 				64BD3B9418793A4000A05337 /* Settings.m in Sources */,
 				367BFBC91DA6A8A9009F57E8 /* SVWebViewControllerActivity.m in Sources */,
 				FC5697D21F4401A000DA5983 /* ABITunesWrapper.m in Sources */,
@@ -1072,14 +1049,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		362977F021650C5300E4019A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 362977EC21650C5200E4019A /* radiomyme StickerPackExtension */;
-			targetProxy = 362977EF21650C5300E4019A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -1092,6 +1061,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 12.0.3.120;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8A4M4QND2E;
 				ENABLE_BITCODE = NO;
@@ -1099,6 +1069,15 @@
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
 					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1118,7 +1097,12 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio 7 Pro Core/Vendors/GoogleAdMobAdsSdk\"";
+				MARKETING_VERSION = 8.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1147,6 +1131,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 12.0.3.120;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8A4M4QND2E;
 				ENABLE_BITCODE = NO;
@@ -1154,6 +1139,15 @@
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
+					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
 					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
 				);
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1170,7 +1164,12 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio 7 Pro Core/Vendors/GoogleAdMobAdsSdk\"";
+				MARKETING_VERSION = 8.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1185,244 +1184,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		362977F521650C5300E4019A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 8A4M4QND2E;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "radiomyme StickerPackExtension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ingravity.radiomyme.StickerPackExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		362977F621650C5300E4019A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 8A4M4QND2E;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "radiomyme StickerPackExtension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ingravity.radiomyme.StickerPackExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		362977F921650C5300E4019A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 8A4M4QND2E;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = radiomyme/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ingravity.radiomyme;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		362977FA21650C5300E4019A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 8A4M4QND2E;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = radiomyme/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ingravity.radiomyme;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1458,24 +1219,6 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		362977F421650C5300E4019A /* Build configuration list for PBXNativeTarget "radiomyme StickerPackExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				362977F521650C5300E4019A /* Debug */,
-				362977F621650C5300E4019A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		362977F821650C5300E4019A /* Build configuration list for PBXNativeTarget "radiomyme" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				362977F921650C5300E4019A /* Debug */,
-				362977FA21650C5300E4019A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

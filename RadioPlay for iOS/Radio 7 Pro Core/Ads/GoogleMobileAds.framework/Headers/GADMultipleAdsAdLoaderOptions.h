@@ -2,12 +2,10 @@
 //  GADMultipleAdsAdLoaderOptions.h
 //  Google Mobile Ads SDK
 //
-//  Copyright 2017 Google Inc. All rights reserved.
+//  Copyright 2017 Google LLC. All rights reserved.
 //
 
 #import <GoogleMobileAds/GADAdLoader.h>
-
-GAD_ASSUME_NONNULL_BEGIN
 
 /// Ad loader options for requesting multiple ads. Requesting multiple ads in a single request is
 /// currently only available for native app install ads and native content ads.
@@ -23,5 +21,3 @@ GAD_ASSUME_NONNULL_BEGIN
 @property(nonatomic) NSInteger numberOfAds;
 
 @end
-
-GAD_ASSUME_NONNULL_END

@@ -1,9 +1,5 @@
 //
-//  Radio7_Prefix.pch
-//  Radio 7 Pro
-//11
-//  Created by Christopher Coudriet on 10/15/2012.
-//  Copyright Christopher Coudriet 2012. All rights reserved.
+//  Radio Play by Radiomyme
 //
 //  Permission is given to license this source code file, in any
 //  project, commercial or otherwise, entirely at your risk, with the condition

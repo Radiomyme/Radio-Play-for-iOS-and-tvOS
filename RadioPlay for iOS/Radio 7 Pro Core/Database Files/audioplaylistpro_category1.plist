@@ -6,6 +6,60 @@
 	<array>
 		<dict>
 			<key>Radio Name</key>
+			<string>Hitradio OE3</string>
+			<key>Radio Stream URL</key>
+			<string>http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1826116</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/hitradio.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Das Leben ist ein Hit</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID Username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Radio 2.0</string>
+			<key>Radio Stream URL</key>
+			<string>http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1738454</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/radio2.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Valli di Bergamo</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID Username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Antenna 1</string>
+			<key>Radio Stream URL</key>
+			<string>http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1796249</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/antenna1.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Pop Music</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID Username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
 			<string>DanceWave</string>
 			<key>Radio Stream URL</key>
 			<string>http://dancewave.online/dance.mp3.pls</string>

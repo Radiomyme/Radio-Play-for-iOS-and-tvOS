@@ -13,6 +13,8 @@
 #import <OneSignal/OneSignal.h>
 #import <StoreKit/StoreKit.h>
 
+@import GoogleMobileAds;
+
 const double URLCacheInterval = 0;
 
 
@@ -61,49 +63,21 @@ int UpdatePerformed = 0;
     
     self.uiIsVisible = YES;
     
-    Reachability* reachability = [Reachability sharedReachability];
-    [reachability setHostName:@"www.radiomyme.com"];    // set your host name here
-    NetworkStatus remoteHostStatus = [reachability remoteHostStatus];
-    
-    if(remoteHostStatus == NotReachable) {
-        
-        // If the remote list is not available/internet not available -> open a alert with an OK and cancel button
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Internet Connection Required" message:@"To load the Radiomyme database and listen to streaming audio you must have an active internet connection. Please check that you have and active internet connection and try again." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
-        [alert release];
-        
+    //Reachability* reachability = [Reachability sharedReachability];
+    //[reachability setHostName:@"www.radiomyme.fr"];    // set your host name here
+    //NetworkStatus remoteHostStatus = [reachability remoteHostStatus];
+
+    _isLocalEnabled = LOCAL_ENABLED;
+
+    if (_isLocalEnabled)
+    {
         [self loadLocalData];
         reloadButton.hidden = YES;
     }
-    else if (remoteHostStatus == ReachableViaWiFiNetwork) {
-        
-        _isLocalEnabled = LOCAL_ENABLED;
-        
-        if (_isLocalEnabled)
-        {
-            [self loadLocalData];
-            reloadButton.hidden = YES;
-        }
-        else
-        {
-            [self loadNetworkData];
-            reloadButton.enabled = YES;
-        }
-    }
-    else if (remoteHostStatus == ReachableViaCarrierDataNetwork) {
-        
-        _isLocalEnabled = LOCAL_ENABLED;
-        
-        if (_isLocalEnabled)
-        {
-            [self loadLocalData];
-            reloadButton.hidden = YES;
-        }
-        else
-        {
-            [self loadNetworkData];
-            reloadButton.enabled = YES;
-        }
+    else
+    {
+        [self loadNetworkData];
+        reloadButton.enabled = YES;
     }
     
     /* set initial state of network activity indicators */
@@ -156,8 +130,8 @@ int UpdatePerformed = 0;
     //Configure the AdMob ID
     //
     //Tips : You can change the ID in the Settings.m
-    
-    [GADMobileAds configureWithApplicationID:GOOGLE_ID];
+
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
     
     //Enable Ads or not if the InApp Purchase has been made
     //
@@ -325,22 +299,9 @@ int UpdatePerformed = 0;
         }
     }
     
-    Reachability* reachability = [Reachability sharedReachability];
-    [reachability setHostName:@"www.radiomyme.com"];
-    NetworkStatus remoteHostStatus = [reachability remoteHostStatus];
-    
-    if(remoteHostStatus == NotReachable) {
-        
-        // open a alert with an OK and cancel button
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Internet Connection Required" message:@"To load the Radiomyme database and listen to streaming audio you must have an active internet connection. Please check that you have and active internet connection and try again." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
-        [alert release];
-        
-    }
-    else if (remoteHostStatus == ReachableViaWiFiNetwork) {
-    }
-    else if (remoteHostStatus == ReachableViaCarrierDataNetwork) {
-    }
+    //Reachability* reachability = [Reachability sharedReachability];
+    //[reachability setHostName:@"www.radiomyme.fr"];
+    //NetworkStatus remoteHostStatus = [reachability remoteHostStatus];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

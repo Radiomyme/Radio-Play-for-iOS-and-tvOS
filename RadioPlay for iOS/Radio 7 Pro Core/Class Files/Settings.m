@@ -16,6 +16,7 @@ BOOL M3u8_Play= NO;             // Do NOT change
 
 // Automatically switches between local database or remote database
 // If you use remote (LOCAL_ENABLED = NO), you can add the URL in Radio Play Core -> Database Files -> PlayerDB.plist
+// Categories are not supported in remote mode
 
 NSString *const LOCAL_ENABLED = YES; // Mark NO to use remote access
 
@@ -23,38 +24,37 @@ NSString *const LOCAL_ENABLED = YES; // Mark NO to use remote access
 //--------          Ads             -------
 //-----------------------------------------
 
-// AdMob (Google)
+// AdMob (Google) - https://apps.admob.com/
 
-BOOL *const GOOGLE_ACTIVATION = NO; //To enable Ads, mark YES to activate. If Facebook and Google are activated, only Google AdMob will be displayed. To desactivate you replace YES by NO
-BOOL *const GOOGLE_BANNER = NO; //Add a banner in the PlayerView at the bottom
-NSString *const GOOGLE_adUnitID = @"ca-app-pub-4466685095115509/6569030274";//Create your ID for your Interstitial -> https://apps.admob.com/
-NSString *const Google_ad_banner_ID = @"ca-app-pub-4466685095115509/1323089876";//Create your ID for your Banner -> https://apps.admob.com/
-NSString *const GOOGLE_ID = @"ca-app-pub-4466685095115509~5892890271";//Create your ID for your App -- It's not your Banner or Intersticial ID -> This ID is displayed in the top of your AdMob Home Page
-
-// Facebook Ads (Facebook)
-
-BOOL *const FACEBOOK_ACTIVATION = NO; //To enable FacebookAds, First mark GOOGLE_ACTIVATION = NO; Then mark FACEBOOK_ACTIVATION = YES;
-NSString *const FACEBOOK_ID_Interstitial = @"1548475662112014_1548486075444306";//Create your ID here -> https://developers.facebook.com/docs/audience-network -> Start Now
+BOOL *const GOOGLE_ACTIVATION = YES; //To enable Ads, mark YES to activate. If Facebook and Google are activated, only Google AdMob will be displayed. To desactivate you replace YES by NO
+BOOL *const GOOGLE_BANNER = YES; //Add a banner in the PlayerView at the bottom
+BOOL *const GOOGLE_BANNER_HOME= NO; //Add a banner in the HomeView at the bottom
+NSString *const Google_ad_interstitial_ID = @"ca-app-pub-4466685095115509/6569030274"; // Player Interstitial
+NSString *const Google_ad_banner_ID = @"ca-app-pub-4466685095115509/1323089876"; // Player Banner
+NSString *const Google_ad_banner_Home_ID = @"ca-app-pub-4466685095115509/6160328830"; // Home Banner
+NSString *const GOOGLE_ID = @"ca-app-pub-4466685095115509~5892890271";//Create your ID for your App -- It's not your Banner or Interstitial ID -> This ID is displayed in the top of your AdMob Home Page
 
 // Ad Remover (In-App Purchase)
 
-// Change #define kRemoveAdsProductIdentifier @"com.endato.radiomyme.adsremover" in Settings.h
-BOOL InAppPurchase = NO; //To disable mark NO
+// Change #define kRemoveAdsProductIdentifier @"com.endato.radiomyme.adsremover" in Settings.h & create your ID on itunesconnect.apple.com
+BOOL InAppPurchase = YES; //To disable mark NO
 
 //-----------------------------------------
 //--------          Home            -------
 //-----------------------------------------
 
-NSString *const Home_Title = @"Radio Play";                         //Name displayed on page "Radio"
-NSString *Facebook_URL = @"https://www.facebook.com/radiomyme";     //Your Facebook URL displayed in the Player Page
-NSString *Twitter_URL = @"https://twitter.com/radiomyme";           //Your Twitter URL displayed in the Player Page
-NSString *const Chat_URL = @"https://www.radiomyme.fr/";        //Your Chat URL displayed in the Player Page
+NSString *const Home_Title = @"Radio Play";                 //Name displayed on page "Radio"
+NSString *Facebook_URL = @"408517575833673";                //Your Facebook ID displayed in the Player Page
+NSString *const open_music_URL = @"https://www.radiomyme.fr/";    //Your Website URL displayed in the Player Page
 
-NSString *Instagram_URL = @"radiomyme";
+// Use Instagram or Twitter ?
 
-// Feature Preview - WILL BE AVAILABLE SOON
+NSString *Account_ID = @"radiomyme";    //Your account displayed in the Player Page
+BOOL *const Use_Twitter = YES;          //Use twitter (YES), (NO) for Instagram
 
-BOOL *const Allow_Search = YES;                                       //Allow the Search Bar to Appear in the Home Page
+// Search
+
+BOOL *const Allow_Search = YES;         //Allow the Search Bar to Appear in the Home Page
 
 //-----------------------------------------
 //--------  QuickActions (3DTouch)  -------
@@ -99,14 +99,10 @@ NSString *const Station_Twitter4 = @"franceinfo";
 //--------      Player Settings     -------
 //-----------------------------------------
 
-// Player Title
-
-NSString *const Player_Title = @"";               //Name displayed on page "Player"
-
 // Default Artist and Song if nothing is available
 
-NSString *Station_Title = @"Radio Play";   //Default artist name displayed if there is no information available
-NSString *Station_Subtitle = @"Broadcasting Live";          //Default title displayed if there is no information available
+NSString *Station_Title = @"Radio Play";    //Default artist name displayed if there is no information available
+NSString *Station_Subtitle = @"Broadcasting Live";  //Default title displayed if there is no information available
 
 // Do you want to use Last_Fm to find the albums ?
 
@@ -114,18 +110,21 @@ BOOL Use_Last_Fm = YES; //Use Last_Fm Album or not
 
 // Share Button Settings
 
-BOOL *const Open_Music = YES;
+BOOL *const Open_Music = YES;   //Will open the Music app to add the song to your costumer library (Apple Music)
 NSString *const Default_URL = @"https://www.radiomyme.fr"; //Default URL of share button in Player View
 
 BOOL *const Share_whith_station_logo = NO; //If the user push Share in the Player section, the image will be the logo of the station. If NO is selected, it will be the current Album Image of LastFM.
 
-// Blur Effect
+// Album Art
 
 BOOL Activate_Blur_Effect = YES; // Activate the Blur Effect of the Album Art
+BOOL Activate_Reflection_Effect = NO; // Activate the Reflection Effect of the Album Art
 
 // Volume Slider
 
-NSString *const Activate_Volume_Slider = YES; // Activate the Volume slider when ads are removed (In App Purchase) or Ads disable
+NSString *const Activate_Volume_Slider = YES; // Activate the Volume slider when ads are removed (In App Purchase) or Ads disabled
+
+NSString *Album_size = @"1000";
 
 //-----------------------------------------
 //------------    Categories   ------------

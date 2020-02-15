@@ -11,11 +11,11 @@ extern NSString *const LOCAL_ENABLED;
 // Automatically enables or disables Admob
 extern BOOL *const GOOGLE_ACTIVATION;
 extern BOOL *const GOOGLE_BANNER;
-extern NSString *const GOOGLE_adUnitID;
+extern BOOL *const GOOGLE_BANNER_HOME;
+extern NSString *const Google_ad_interstitial_ID;
 extern NSString *const Google_ad_banner_ID;
+extern NSString *const Google_ad_banner_Home_ID;
 extern NSString *const GOOGLE_ID;
-extern BOOL *const FACEBOOK_ACTIVATION;
-extern NSString *const FACEBOOK_ID_Interstitial;
 extern BOOL InAppPurchase;
 extern NSString *const InAppPurchase_Id;
 extern BOOL USE_PLAYER_V2;
@@ -23,26 +23,30 @@ extern BOOL USE_m3u8;
 extern BOOL M3u8_Play;
 extern NSString *const Activate_Volume_Slider;
 extern BOOL Activate_Blur_Effect;
+extern BOOL Activate_Reflection_Effect;
 extern BOOL Use_Last_Fm;
 extern BOOL *const Share_whith_station_logo;
+extern BOOL *const Use_Twitter;
 extern BOOL *const Allow_Search;
 extern BOOL *const Open_Music;
 extern NSArray *Categories;
 extern BOOL *const Enable_Categories;
 
+extern NSString *Album_size;
+
 //
 // Add your iTunes Connect Id for In-App Purchase
 //
 
-#define kRemoveAdsProductIdentifier @"com.endato.radiomyme.adremover"
+#define kRemoveAdsProductIdentifier @"com.envato.radiomyme.adsremover"
 
 // end
 
 extern NSString *const Home_Title;
 extern NSString *Facebook_URL;
-extern NSString *Twitter_URL;
+extern NSString *Account_ID;
 extern NSString *Instagram_URL;
-extern NSString *const Chat_URL;
+extern NSString *const open_music_URL;
 extern NSString *const Station_Name1;
 extern NSString *const Station_Name2;
 extern NSString *const Station_Name3;
@@ -67,7 +71,6 @@ NSString *const Station_Logo1;
 NSString *const Station_Logo2;
 NSString *const Station_Logo3;
 NSString *const Station_Logo4;
-extern NSString *const Player_Title;
 extern NSString *const Default_StreamAlbum_Station1;
 extern NSString *const Default_StreamAlbum_Station1_URL;
 extern NSString *const Default_StreamAlbum_Station2;

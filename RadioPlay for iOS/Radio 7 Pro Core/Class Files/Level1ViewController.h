@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @import SafariServices;
+@import GoogleMobileAds;
 
 @class PlayerViewController, AppDelegate;
 
@@ -26,6 +27,10 @@
 // Local or Remote Database Support
 
 @property (assign) BOOL isLocalEnabled;
+
+// Google Ad Banner - Home
+
+@property(nonatomic, strong) GADBannerView *bannerView;
 
 // End Local or Remote Database Support
 
