@@ -5,8 +5,6 @@
 
 #import "Level1ViewController.h"
 #import "UIImageView+WebCache.h"
-#import "SVWebViewController.h"
-#import "SVModalWebViewController.h"
 #import "CustomTableCell.h"
 #import "AppDelegate.h"
 #import "Settings.h"

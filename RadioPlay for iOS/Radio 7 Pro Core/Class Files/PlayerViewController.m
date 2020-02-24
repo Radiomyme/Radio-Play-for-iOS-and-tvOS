@@ -7,8 +7,6 @@
 #import <QuartzCore/CAAnimation.h>
 #import "UIImageView+LBBlurredImage.h"
 #import "UIImageView+WebCache.h"
-#import "SVWebViewController.h"
-#import "SVModalWebViewController.h"
 #import "Streamer.h"
 #import "Settings.h"
 #import "AppDelegate.h"
