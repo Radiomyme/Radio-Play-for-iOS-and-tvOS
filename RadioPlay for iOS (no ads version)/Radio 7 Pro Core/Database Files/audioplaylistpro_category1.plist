@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemChildren</key>
+	<array>
+		<dict>
+			<key>Radio Name</key>
+			<string>Hitradio OE3</string>
+			<key>Radio Stream URL</key>
+			<string>http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1826116</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/hitradio.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Das Leben ist ein Hit</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID Username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Radio 2.0</string>
+			<key>Radio Stream URL</key>
+			<string>http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1738454</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/radio2.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Valli di Bergamo</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID Username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Antenna 1</string>
+			<key>Radio Stream URL</key>
+			<string>http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1796249</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/antenna1.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Pop Music</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID Username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>DanceWave</string>
+			<key>Radio Stream URL</key>
+			<string>http://dancewave.online/dance.mp3.pls</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/DanceWave.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Dance - Electro</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID Username</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>MixFeever</string>
+			<key>Radio Stream URL</key>
+			<string>http://listen.radionomy.com/feevermix.m3u</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/mixfeever.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Sound of Belgium</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Funradio</string>
+			<key>Radio Stream URL</key>
+			<string>http://streaming.radio.funradio.fr/fun-1-48-192</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/Funradio.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Écoutez le son dancefloor en direct</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Chart Hits FM</string>
+			<key>Radio Stream URL</key>
+			<string>http://charthits-high.rautemusik.fm/listen.pls</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/ChartHitsFM.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Deep House Music</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>1 FM Trance</string>
+			<key>Radio Stream URL</key>
+			<string>http://strm112.1.fm/trance_mobile_mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/1FMTrance.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Electro - Pop</string>
+		</dict>
+	</array>
+</dict>
+</plist>

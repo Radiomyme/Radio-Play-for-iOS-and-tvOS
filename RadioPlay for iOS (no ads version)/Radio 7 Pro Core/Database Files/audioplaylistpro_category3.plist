@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemChildren</key>
+	<array>
+		<dict>
+			<key>Radio Name</key>
+			<string>Ultra Miami 2017</string>
+			<key>Radio Stream URL</key>
+			<string></string>
+			<key>Radio Stream M3U8</key>
+			<string>http://www.radiomyme.fr/IOS/video/TV/Ultra%20Miami%202017%20%28Official%204K%20Aftermovie%29.mp4</string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>http://www.radiomyme.fr/IOS/video/TV/ultra-music-festival.png</string>
+			<key>Radio Subtitle</key>
+			<string>15 min</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Hardwell Live</string>
+			<key>Radio Stream URL</key>
+			<string></string>
+			<key>Radio Stream M3U8</key>
+			<string>http://www.radiomyme.fr/IOS/video/TV/Hardwell%20Live%20at%20Ultra%20Music%20Festival%20Miami%202017.mp4</string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>http://www.radiomyme.fr/IOS/video/TV/ultra-music-festival.png</string>
+			<key>Radio Subtitle</key>
+			<string>1h</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

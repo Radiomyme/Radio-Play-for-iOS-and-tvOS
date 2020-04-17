@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemChildren</key>
+	<array>
+		<dict>
+			<key>Radio Name</key>
+			<string>FranceINTER</string>
+			<key>Radio Stream URL</key>
+			<string>http://direct.franceinter.fr/live/franceinter-midfi.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/franceinter.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Info, Culture, Humour, Musique</string>
+			<key>Facebook ID</key>
+			<string>122067514495044</string>
+			<key>Twitter ID</key>
+			<string>franceinter</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>RTL</string>
+			<key>Radio Stream URL</key>
+			<string>http://streaming.radio.rtl.fr/rtl-1-44-96</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/RTL.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>RTL bouge</string>
+			<key>Facebook ID</key>
+			<string>282315205283</string>
+			<key>Twitter ID</key>
+			<string>RTLFrance</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>NRJ</string>
+			<key>Radio Stream URL</key>
+			<string>http://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3?origine=fluxradios</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/NRJ.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Hit Music Only</string>
+			<key>Facebook ID</key>
+			<string>39824562567</string>
+			<key>Twitter ID</key>
+			<string>NRJhitmusiconly</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>FranceINFO</string>
+			<key>Radio Stream URL</key>
+			<string>http://direct.franceinfo.fr/live/franceinfo-midfi.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/franceinfo.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Actualités en temps réel et info en direct</string>
+			<key>Facebook ID</key>
+			<string>266677330042439</string>
+			<key>Twitter ID</key>
+			<string>franceinfo</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>RMC</string>
+			<key>Radio Stream URL</key>
+			<string>http://chai5she.cdn.dvmr.fr/rmcinfo</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/rmc.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Info Talk Sport</string>
+			<key>Facebook ID</key>
+			<string>8384653093</string>
+			<key>Twitter ID</key>
+			<string>RMCinfo</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Europe1</string>
+			<key>Radio Stream URL</key>
+			<string>http://mp3lg3.scdn.arkena.com/10489/europe1.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/europe1.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Europe 1, Mieux capter son époque</string>
+			<key>Facebook ID</key>
+			<string>223401325619</string>
+			<key>Twitter ID</key>
+			<string>Europe1</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Nostalgie</string>
+			<key>Radio Stream URL</key>
+			<string>http://cdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3?origine=fluxradios</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/nostalgie.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Nostalgie, les plus grandes chansons !</string>
+			<key>Facebook ID</key>
+			<string>205050186398</string>
+			<key>Twitter ID</key>
+			<string>nostalgiefm</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Skyrock</string>
+			<key>Radio Stream URL</key>
+			<string>http://icecast.skyrock.net/s/natio_mp3_128k</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/skyrock.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>La première radio Urban mondiale</string>
+			<key>Facebook ID</key>
+			<string>16179605558</string>
+			<key>Twitter ID</key>
+			<string>SkyrockFM</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Funradio</string>
+			<key>Radio Stream URL</key>
+			<string>http://streaming.radio.funradio.fr/fun-1-48-192</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/Funradio.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Écoutez le son dancefloor en direct</string>
+			<key>Facebook ID</key>
+			<string>40749759802</string>
+			<key>Twitter ID</key>
+			<string>funradio_fr</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>RTL2</string>
+			<key>Radio Stream URL</key>
+			<string>http://streaming.radio.rtl2.fr:80/rtl2-1-44-96</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/rtl/RTL2.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Le son Pop-Rock</string>
+			<key>Facebook ID</key>
+			<string>97599711078</string>
+			<key>Twitter ID</key>
+			<string>RTL2officiel</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Contact FM</string>
+			<key>Radio Stream URL</key>
+			<string>http://radio-contact.ice.infomaniak.ch/radio-contact-high.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/contact.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Le Mix du Grand Nord</string>
+			<key>Facebook ID</key>
+			<string>48503371735</string>
+			<key>Twitter ID</key>
+			<string>RadioContactFM</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>RFM</string>
+			<key>Radio Stream URL</key>
+			<string>http://rfm-live-mp3-128.scdn.arkena.com/rfm.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/rfm.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Le Meilleur de la musique</string>
+			<key>Facebook ID</key>
+			<string>31395019055</string>
+			<key>Twitter ID</key>
+			<string>RFMFrance</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>VirginRadio</string>
+			<key>Radio Stream URL</key>
+			<string>http://vr-live-mp3-128.scdn.arkena.com/virginradio.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/virginradio.png</string>
+			<key>Radio Subtitle</key>
+			<string>Pop Rock Electro</string>
+			<key>Facebook ID</key>
+			<string>124348500485</string>
+			<key>Twitter ID</key>
+			<string>VirginRadiofr</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>CherieFM</string>
+			<key>Radio Stream URL</key>
+			<string>http://cdn.nrjaudio.fm/audio1/fr/30201/mp3_128.mp3?origine=fluxradios</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/cheriefm.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Pop Love Music</string>
+			<key>Facebook ID</key>
+			<string>432576485594</string>
+			<key>Twitter ID</key>
+			<string>radiocheriefm</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Rire et Chansons</string>
+			<key>Radio Stream URL</key>
+			<string>http://cdn.nrjaudio.fm/audio1/fr/30401/mp3_128.mp3?origine=fluxradios</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/rireetchanson.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>La Radio du Rire: Blagues, sketches, Jeux...</string>
+			<key>Facebook ID</key>
+			<string>63240972480</string>
+			<key>Twitter ID</key>
+			<string>rirechansons</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Radio Classique</string>
+			<key>Radio Stream URL</key>
+			<string>http://radioclassique.ice.infomaniak.ch/radioclassique-high.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/RadioClassique.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Vie Moderne, Radio Classique</string>
+			<key>Facebook ID</key>
+			<string>321517295651</string>
+			<key>Twitter ID</key>
+			<string>radioclassique</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Mouv&apos;</string>
+			<key>Radio Stream URL</key>
+			<string>http://direct.mouv.fr/live/mouv-midfi.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/Mouv.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Hip Hop never stop</string>
+			<key>Facebook ID</key>
+			<string>102387915697</string>
+			<key>Twitter ID</key>
+			<string>mouv</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Radio Nova</string>
+			<key>Radio Stream URL</key>
+			<string>http://novazz.ice.infomaniak.ch/novazz-128.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/Nova.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Le Grand Mix !</string>
+			<key>Facebook ID</key>
+			<string>275841586842</string>
+			<key>Twitter ID</key>
+			<string>laRadioNova</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Fip</string>
+			<key>Radio Stream URL</key>
+			<string>http://direct.fipradio.fr/live/fip-midfi.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/Fip.png</string>
+			<key>Radio Subtitle</key>
+			<string>La radio de toutes les musiques</string>
+			<key>Facebook ID</key>
+			<string>269046660290</string>
+			<key>Twitter ID</key>
+			<string>fipradio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Radio FG</string>
+			<key>Radio Stream URL</key>
+			<string>http://radiofg.impek.com/fg</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/fg.png</string>
+			<key>Radio Subtitle</key>
+			<string>Feel Good</string>
+			<key>Facebook ID</key>
+			<string>8449198482</string>
+			<key>Twitter ID</key>
+			<string>RadioFGOfficiel</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Sud Radio</string>
+			<key>Radio Stream URL</key>
+			<string>http://start-sud.ice.infomaniak.ch/start-sud-high.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/sud_radio.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Parlons Vrai</string>
+			<key>Facebook ID</key>
+			<string>44326931432</string>
+			<key>Twitter ID</key>
+			<string>SudRadio</string>
+		</dict>
+	</array>
+</dict>
+</plist>

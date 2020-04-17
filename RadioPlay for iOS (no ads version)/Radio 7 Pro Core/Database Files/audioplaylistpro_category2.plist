@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>itemChildren</key>
+	<array>
+		<dict>
+			<key>Radio Name</key>
+			<string>Ibiza Global Radio</string>
+			<key>Radio Stream URL</key>
+			<string>http://ibizaglobalradio.streaming-pro.com:8024/;</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/ibizaglobalradio.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Dance - Electro</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Sunshine Live</string>
+			<key>Radio Stream URL</key>
+			<string>http://stream.sunshine-live.de/live/mp3-192/Webradio-Player/</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/sunshinelive.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>1 FM Top 40</string>
+			<key>Radio Stream URL</key>
+			<string>http://strm112.1.fm/top40_mobile_mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/1FMtop40.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string>https://www.Facebook ID.com/Topclubradio</string>
+			<key>Twitter ID</key>
+			<string>https://Twitter ID.com/topclubradio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Chart Hits FM</string>
+			<key>Radio Stream URL</key>
+			<string>http://charthits-high.rautemusik.fm/listen.pls</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/ChartHitsFM.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>Dance - Electro</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Ibiza Sonica</string>
+			<key>Radio Stream URL</key>
+			<string>http://bit.ly/1TYRJHZ</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/ibizasonica.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>1 FM Trance</string>
+			<key>Radio Stream URL</key>
+			<string>http://strm112.1.fm/trance_mobile_mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://www.radiomyme.fr/tv/resources/images/radio/1FMTrance.jpg</string>
+			<key>Radio Subtitle</key>
+			<string>House Music</string>
+			<key>Facebook ID</key>
+			<string>https://www.Facebook ID.com/Topclubradio</string>
+			<key>Twitter ID</key>
+			<string>topclubradio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Prysm Deep</string>
+			<key>Radio Stream URL</key>
+			<string>http://streamingv2.shoutcast.com/prysmradio04-mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s237777q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Deep house from France</string>
+			<key>Facebook ID</key>
+			<string>155966541089686</string>
+			<key>Twitter ID</key>
+			<string>@prysmradio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Costa Del Mar</string>
+			<key>Radio Stream URL</key>
+			<string>http://stream.cdm-deephouse.com:8012/stream-mp3-Deep</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s244694q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Deep house from Ibiza</string>
+			<key>Facebook ID</key>
+			<string>519632404726283</string>
+			<key>Twitter ID</key>
+			<string>@Costadelmar.radio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Deep House Nation</string>
+			<key>Radio Stream URL</key>
+			<string>http://hyades.shoutca.st:8400/live</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s268770/images/logoq.jpg?t=154513</string>
+			<key>Radio Subtitle</key>
+			<string>The wonderfull deepness</string>
+			<key>Facebook ID</key>
+			<string>223401325619</string>
+			<key>Twitter ID</key>
+			<string>@HouseNati</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>B4B Deep House</string>
+			<key>Radio Stream URL</key>
+			<string>http://comet.shoutca.st:8727/</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s247756/images/logoq.png?t=636251</string>
+			<key>Radio Subtitle</key>
+			<string>Deep house music</string>
+			<key>Facebook ID</key>
+			<string>279553582239338</string>
+			<key>Twitter ID</key>
+			<string>@radiob4b</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Deep House Lounge</string>
+			<key>Radio Stream URL</key>
+			<string>http://198.15.94.34:8024/stream</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s136557q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Global deep house</string>
+			<key>Facebook ID</key>
+			<string>335643483138415</string>
+			<key>Twitter ID</key>
+			<string>@deephouselounge</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Deep Audio Groove</string>
+			<key>Radio Stream URL</key>
+			<string>http://comet.shoutca.st:8352/stream</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s288527/images/logoq.jpg?t=151300</string>
+			<key>Radio Subtitle</key>
+			<string>Finest deep house</string>
+			<key>Facebook ID</key>
+			<string>155380588276265</string>
+			<key>Twitter ID</key>
+			<string>@deepaudiogroove</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Deep Vibes Radio</string>
+			<key>Radio Stream URL</key>
+			<string>http://DEEPVIBES.CO.UK:9106</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s92220q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Deeper vibes from the UK</string>
+			<key>Facebook ID</key>
+			<string>117284215015483</string>
+			<key>Twitter ID</key>
+			<string>@deepvibes</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>TheGoosh Radio</string>
+			<key>Radio Stream URL</key>
+			<string>http://eu2.fastcast4u.com/proxy/thegoosh?mp=/1</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s304940/images/logoq.jpg?t=151920</string>
+			<key>Radio Subtitle</key>
+			<string>Deep house 24/7</string>
+			<key>Facebook ID</key>
+			<string>447273085312672</string>
+			<key>Twitter ID</key>
+			<string>@thegooshcom</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Deep Roast Radio</string>
+			<key>Radio Stream URL</key>
+			<string>http://usa7.fastcast4u.com/proxy/yunkhhep?mp=/1</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s304924/images/logoq.jpg?t=152606</string>
+			<key>Radio Subtitle</key>
+			<string>Deep house from South Africa</string>
+			<key>Facebook ID</key>
+			<string>1212152372252849</string>
+			<key>Twitter ID</key>
+			<string>@DeepRoastRadio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Deep &amp; Chill</string>
+			<key>Radio Stream URL</key>
+			<string>http://185.44.192.36:8026/stream</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s292749q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Go deep n chill</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>BigFM Deep &amp; Tech</string>
+			<key>Radio Stream URL</key>
+			<string>http://streams.bigfm.de/bigfm-nitroxdeep-128-mp3?usid=0-0-H-A-D-02</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s263403/images/logoq.jpg?t=151319</string>
+			<key>Radio Subtitle</key>
+			<string>Deep &amp; Tech house</string>
+			<key>Facebook ID</key>
+			<string>50957555959</string>
+			<key>Twitter ID</key>
+			<string>@bigfm</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Radio Marbella</string>
+			<key>Radio Stream URL</key>
+			<string>http://192.99.39.108:7872/stream</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s288666q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Deep vocal house</string>
+			<key>Facebook ID</key>
+			<string>270772340029695</string>
+			<key>Twitter ID</key>
+			<string>@MarbsRadiotw</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Radio Deep Underground</string>
+			<key>Radio Stream URL</key>
+			<string>http://193.111.153.40/radio/8000/rdu.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s291934/images/logoq.jpg?t=153901</string>
+			<key>Radio Subtitle</key>
+			<string>100% underground</string>
+			<key>Facebook ID</key>
+			<string>363718690689988</string>
+			<key>Twitter ID</key>
+			<string>@RadiodeepRdu</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Misto FM Deep</string>
+			<key>Radio Stream URL</key>
+			<string>http://stream.mistofm.com.ua/deep-music</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-profiles.tunein.com/s299775/images/logoq.jpg?t=151628</string>
+			<key>Radio Subtitle</key>
+			<string>Deep house music</string>
+			<key>Facebook ID</key>
+			<string>1381677541853982</string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Deeper Shades of House</string>
+			<key>Radio Stream URL</key>
+			<string>http://andromeda.housejunkie.ca:8000/radio.mp3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s134519q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Deeper shades of house</string>
+			<key>Facebook ID</key>
+			<string>131688693517280</string>
+			<key>Twitter ID</key>
+			<string>@deepershades</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Frisky Deep</string>
+			<key>Radio Stream URL</key>
+			<string>http://deep.friskyradio.com/friskydeep_aachi</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s0q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Frisky underground</string>
+			<key>Facebook ID</key>
+			<string>79384586997</string>
+			<key>Twitter ID</key>
+			<string>@friskyRadio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Vanilla Radio - Deep Flavour</string>
+			<key>Radio Stream URL</key>
+			<string>http://stream.radiojar.com/egqwgc0q52mtv</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s130490q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Deep smooth &amp; sexy</string>
+			<key>Facebook ID</key>
+			<string>266177786830256</string>
+			<key>Twitter ID</key>
+			<string>@VANILLAwebradio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Cool Deep</string>
+			<key>Radio Stream URL</key>
+			<string>http://5.39.86.44:8017/stream3</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s285156q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Cool Deep House</string>
+			<key>Facebook ID</key>
+			<string>235676630151</string>
+			<key>Twitter ID</key>
+			<string>@coolmusicradio</string>
+		</dict>
+		<dict>
+			<key>Radio Name</key>
+			<string>Old House Music Mixes</string>
+			<key>Radio Stream URL</key>
+			<string>http://138.201.132.27:8000</string>
+			<key>Radio Stream M3U8</key>
+			<string></string>
+			<key>Background Image</key>
+			<string>https://www.radiomyme.fr/IOS/wall/1.png</string>
+			<key>Radio Logo</key>
+			<string>https://cdn-radiotime-logos.tunein.com/s259372q.png</string>
+			<key>Radio Subtitle</key>
+			<string>Old skool mixes</string>
+			<key>Facebook ID</key>
+			<string></string>
+			<key>Twitter ID</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>
