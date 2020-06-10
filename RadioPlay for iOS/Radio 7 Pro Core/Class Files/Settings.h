@@ -11,6 +11,7 @@ extern NSString *const LOCAL_ENABLED;
 // Automatically enables or disables Admob
 extern BOOL *const GOOGLE_ACTIVATION;
 extern BOOL *const GOOGLE_BANNER;
+extern BOOL *const GOOGLE_BANNER_Rectangle;
 extern BOOL *const GOOGLE_BANNER_HOME;
 extern NSString *const Google_ad_interstitial_ID;
 extern NSString *const Google_ad_banner_ID;

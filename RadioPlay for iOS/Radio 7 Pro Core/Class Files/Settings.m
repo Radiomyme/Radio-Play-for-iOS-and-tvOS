@@ -28,6 +28,7 @@ NSString *const LOCAL_ENABLED = YES; // Mark NO to use remote access
 
 BOOL *const GOOGLE_ACTIVATION = YES; //To enable Ads, mark YES to activate. If Facebook and Google are activated, only Google AdMob will be displayed. To desactivate you replace YES by NO
 BOOL *const GOOGLE_BANNER = YES; //Add a banner in the PlayerView at the bottom
+BOOL *const GOOGLE_BANNER_Rectangle = NO; //Will hide the Album Art and display an ad.
 BOOL *const GOOGLE_BANNER_HOME= NO; //Add a banner in the HomeView at the bottom
 NSString *const Google_ad_interstitial_ID = @"ca-app-pub-4466685095115509/6569030274"; // Player Interstitial
 NSString *const Google_ad_banner_ID = @"ca-app-pub-4466685095115509/1323089876"; // Player Banner

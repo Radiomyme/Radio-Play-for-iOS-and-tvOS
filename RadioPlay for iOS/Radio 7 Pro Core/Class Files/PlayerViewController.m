@@ -148,11 +148,23 @@ static void InterruptionListenerCallback(void *inUserData, UInt32 interruptionSt
   // Make it constrained to the edges of the safe area.
   UILayoutGuide *guide = self.view.safeAreaLayoutGuide;
 
-  [NSLayoutConstraint activateConstraints:@[
-    [guide.leftAnchor constraintEqualToAnchor:bannerView.leftAnchor],
-    [guide.rightAnchor constraintEqualToAnchor:bannerView.rightAnchor],
-    [guide.bottomAnchor constraintEqualToAnchor:bannerView.bottomAnchor]
-  ]];
+  if(GOOGLE_BANNER_Rectangle)
+  {
+      [NSLayoutConstraint activateConstraints:@[
+          [albumArt.leftAnchor constraintEqualToAnchor:bannerView.leftAnchor],
+          [albumArt.rightAnchor constraintEqualToAnchor:bannerView.rightAnchor],
+          [albumArt.centerYAnchor constraintEqualToAnchor:bannerView.centerYAnchor]
+        ]];
+      albumArt.hidden = YES;
+  }
+  else
+  {
+      [NSLayoutConstraint activateConstraints:@[
+          [guide.leftAnchor constraintEqualToAnchor:bannerView.leftAnchor],
+          [guide.rightAnchor constraintEqualToAnchor:bannerView.rightAnchor],
+          [guide.bottomAnchor constraintEqualToAnchor:bannerView.bottomAnchor]
+        ]];
+  }
 }
 
 - (void)positionBannerViewFullWidthAtBottomOfView:(UIView *_Nonnull)bannerView {
@@ -387,7 +399,14 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     {
         if(!areAdsRemoved)
         {
-            self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+            if(GOOGLE_BANNER_Rectangle)
+            {
+                self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeMediumRectangle];
+            }
+            else
+            {
+                self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+            }
             [self addBannerViewToView:self.bannerView];
             self.bannerView.adUnitID = Google_ad_banner_ID;
             self.bannerView.rootViewController = self;
