@@ -151,8 +151,7 @@ static void InterruptionListenerCallback(void *inUserData, UInt32 interruptionSt
   if(GOOGLE_BANNER_Rectangle)
   {
       [NSLayoutConstraint activateConstraints:@[
-          [albumArt.leftAnchor constraintEqualToAnchor:bannerView.leftAnchor],
-          [albumArt.rightAnchor constraintEqualToAnchor:bannerView.rightAnchor],
+          [albumArt.centerXAnchor constraintEqualToAnchor:bannerView.centerXAnchor],
           [albumArt.centerYAnchor constraintEqualToAnchor:bannerView.centerYAnchor]
         ]];
       albumArt.hidden = YES;
