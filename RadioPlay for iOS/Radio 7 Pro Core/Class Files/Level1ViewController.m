@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "Settings.h"
 #import "PlayerViewController.h"
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#import <AdSupport/AdSupport.h>
 
 @import AVFoundation;
 @import AVKit;
@@ -33,56 +35,76 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
 //------------ GOOGLE ADMOB  -----------
 //--------------------------------------
 
-/// Tells the delegate an ad request loaded an ad.
-- (void)adViewDidReceiveAd:(GADBannerView *)adView {
-    NSLog(@"adViewDidReceiveAd");
-    [self addBannerViewToView:self.bannerView];
-    adView.alpha = 0;
-    [UIView animateWithDuration:1.0 animations:^{
-      adView.alpha = 1;
-    }];
-}
-
-/// Tells the delegate an ad request failed.
-- (void)adView:(GADBannerView *)adView
-    didFailToReceiveAdWithError:(GADRequestError *)error {
-    NSLog(@"adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
-}
-
-/// Tells the delegate that a full-screen view will be presented in response
-/// to the user clicking on an ad.
-- (void)adViewWillPresentScreen:(GADBannerView *)adView {
-    NSLog(@"adViewWillPresentScreen");
-}
-
-/// Tells the delegate that the full-screen view will be dismissed.
-- (void)adViewWillDismissScreen:(GADBannerView *)adView {
-    NSLog(@"adViewWillDismissScreen");
-}
-
-/// Tells the delegate that the full-screen view has been dismissed.
-- (void)adViewDidDismissScreen:(GADBannerView *)adView {
-    NSLog(@"adViewDidDismissScreen");
-}
-
-/// Tells the delegate that a user click will open another app (such as
-/// the App Store), backgrounding the current app.
-- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
-    NSLog(@"adViewWillLeaveApplication");
+- (void)requestIDFA {
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            // Tracking authorization completed. Start loading ads here.
+            [self loadBannerAd];
+        }];
+    } else {
+        // Fallback on earlier versions
+        [self loadBannerAd];
+    }
 }
 
 - (void)addBannerViewToView:(UIView *)bannerView {
   bannerView.translatesAutoresizingMaskIntoConstraints = NO;
   [self.view addSubview:bannerView];
-  if (@available(ios 11.0, *)) {
-    // In iOS 11, we need to constrain the view to the safe area.
-    [self positionBannerViewFullWidthAtBottomOfSafeArea:bannerView];
-  } else {
-    // In lower iOS versions, safe area is not available so we use
-    // bottom layout guide and view edges.
-    [self positionBannerViewFullWidthAtBottomOfView:bannerView];
-  }
+  [self.view addConstraints:@[
+    [NSLayoutConstraint constraintWithItem:bannerView
+                               attribute:NSLayoutAttributeBottom
+                               relatedBy:NSLayoutRelationEqual
+                                  toItem:self.bottomLayoutGuide
+                               attribute:NSLayoutAttributeTop
+                              multiplier:1
+                                constant:0],
+    [NSLayoutConstraint constraintWithItem:bannerView
+                               attribute:NSLayoutAttributeCenterX
+                               relatedBy:NSLayoutRelationEqual
+                                  toItem:self.view
+                               attribute:NSLayoutAttributeCenterX
+                              multiplier:1
+                                constant:0]
+                                ]];
 }
+
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+  adView.alpha = 0;
+  [UIView animateWithDuration:1.0 animations:^{
+    adView.alpha = 1;
+  }];
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size
+    withTransitionCoordinator:(id)coordinator {
+  [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+  [coordinator animateAlongsideTransition:^(id
+      _Nonnull context) {
+        [self loadBannerAd];
+  } completion:nil];
+}
+
+- (void)loadBannerAd {
+  // Step 2 - Determine the view width to use for the ad width.
+  CGRect frame = self.view.frame;
+  // Here safe area is taken into account, hence the view frame is used after
+  // the view has been laid out.
+  if (@available(iOS 11.0, *)) {
+    frame = UIEdgeInsetsInsetRect(self.view.frame, self.view.safeAreaInsets);
+  }
+  CGFloat viewWidth = frame.size.width;
+
+  // Step 3 - Get Adaptive GADAdSize and set the ad view.
+  // Here the current interface orientation is used. If the ad is being
+  // preloaded for a future orientation change or different orientation, the
+  // function for the relevant orientation should be used.
+  self.bannerView.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth);
+
+  // Step 4 - Create an ad request and load the adaptive banner ad.
+  GADRequest *request = [GADRequest request];
+  [self.bannerView loadRequest:request];
+}
+
 
 #pragma mark - view positioning
 
@@ -190,16 +212,15 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
 
     // Google AdMob Banner - Home
 
+    [self requestIDFA];
+
     if(GOOGLE_BANNER_HOME)
     {
         if(!areAdsRemoved)
         {
-            self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
-            [self addBannerViewToView:self.bannerView];
             self.bannerView.adUnitID = Google_ad_banner_Home_ID;
             self.bannerView.rootViewController = self;
-            [self.bannerView loadRequest:[GADRequest request]];
-            self.bannerView.delegate = self;
+            [self loadBannerAd];
         }
     }
 }

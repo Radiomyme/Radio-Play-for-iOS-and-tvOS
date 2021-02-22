@@ -23,12 +23,9 @@
 
 BOOL areAdsRemoved;
 
-#import "GoogleMobileAds/GADInterstitial.h"
-#import "GoogleMobileAds/GADInterstitialDelegate.h"
-
 @class AudioStreamer, AutoScrollLabel;
 
-@interface PlayerViewController : UIViewController <UIActionSheetDelegate, NSURLConnectionDataDelegate, RadioDelegate, UIAlertViewDelegate, GADInterstitialDelegate, SKProductsRequestDelegate, SKPaymentTransactionObserver, SFSafariViewControllerDelegate>
+@interface PlayerViewController : UIViewController <UIActionSheetDelegate, NSURLConnectionDataDelegate, RadioDelegate, UIAlertViewDelegate, GADFullScreenContentDelegate, GADBannerViewDelegate, SKProductsRequestDelegate, SKPaymentTransactionObserver, SFSafariViewControllerDelegate>
 {
     IBOutlet UITextField             *downloadSourceField;
     IBOutlet UIButton                *button;
@@ -74,7 +71,7 @@ BOOL areAdsRemoved;
 // Google Ads
 
 @property (nonatomic, strong) GADBannerView *bannerView;
-@property (nonatomic, strong) GADInterstitial *interstitial;
+@property (nonatomic, strong) GADInterstitialAd *interstitial;
 - (GADRequest *)request;
 
 - (IBAction)restore;

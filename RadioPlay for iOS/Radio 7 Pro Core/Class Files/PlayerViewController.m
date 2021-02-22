@@ -128,17 +128,34 @@ static void InterruptionListenerCallback(void *inUserData, UInt32 interruptionSt
 //------------ GOOGLE ADMOB  -----------
 //--------------------------------------
 
-- (void)addBannerViewToView:(UIView *)bannerView {
-  bannerView.translatesAutoresizingMaskIntoConstraints = NO;
-  [self.view addSubview:bannerView];
-  if (@available(ios 11.0, *)) {
-    // In iOS 11, we need to constrain the view to the safe area.
-    [self positionBannerViewFullWidthAtBottomOfSafeArea:bannerView];
-  } else {
-    // In lower iOS versions, safe area is not available so we use
-    // bottom layout guide and view edges.
-    [self positionBannerViewFullWidthAtBottomOfView:bannerView];
+- (void)viewWillTransitionToSize:(CGSize)size
+    withTransitionCoordinator:(id)coordinator {
+  [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+  [coordinator animateAlongsideTransition:^(id
+      _Nonnull context) {
+        [self loadBannerAd];
+  } completion:nil];
+}
+
+- (void)loadBannerAd {
+  // Step 2 - Determine the view width to use for the ad width.
+  CGRect frame = self.view.frame;
+  // Here safe area is taken into account, hence the view frame is used after
+  // the view has been laid out.
+  if (@available(iOS 11.0, *)) {
+    frame = UIEdgeInsetsInsetRect(self.view.frame, self.view.safeAreaInsets);
   }
+  CGFloat viewWidth = frame.size.width;
+
+  // Step 3 - Get Adaptive GADAdSize and set the ad view.
+  // Here the current interface orientation is used. If the ad is being
+  // preloaded for a future orientation change or different orientation, the
+  // function for the relevant orientation should be used.
+  self.bannerView.adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth);
+
+  // Step 4 - Create an ad request and load the adaptive banner ad.
+  GADRequest *request = [GADRequest request];
+  [self.bannerView loadRequest:request];
 }
 
 #pragma mark - view positioning
@@ -190,45 +207,21 @@ static void InterruptionListenerCallback(void *inUserData, UInt32 interruptionSt
                                                          constant:0]];
 }
 
-/// Tells the delegate an ad request succeeded.
-- (void)interstitialDidReceiveAd:(GADInterstitial *)ad {
-    [self.interstitial presentFromRootViewController:self];
-    NSLog(@"interstitialDidReceiveAd");
+/// Tells the delegate that the ad failed to present full screen content.
+- (void)ad:(nonnull id<GADFullScreenPresentingAd>)ad
+didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
+    NSLog(@"Ad did fail to present full screen content.");
+}
+
+/// Tells the delegate that the ad presented full screen content.
+- (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
+    NSLog(@"Ad did present full screen content.");
     [self streamerPlay];
-    [_radio pause];
 }
 
-/// Tells the delegate an ad request failed.
-- (void)interstitial:(GADInterstitial *)ad
-didFailToReceiveAdWithError:(GADRequestError *)error {
-    NSLog(@"interstitial:didFailToReceiveAdWithError: %@", [error localizedDescription]);
-    [self streamerPlay];
-    //[self updateAlbumArt];
-}
-
-/// Tells the delegate that an interstitial will be presented.
-- (void)interstitialWillPresentScreen:(GADInterstitial *)ad {
-    NSLog(@"interstitialWillPresentScreen");
-}
-
-/// Tells the delegate the interstitial is to be animated off the screen.
-- (void)interstitialWillDismissScreen:(GADInterstitial *)ad {
-    NSLog(@"interstitialWillDismissScreen");
-    [_radio play];
-    [self updateAlbumArt];
-}
-
-/// Tells the delegate the interstitial had been animated off the screen.
-- (void)interstitialDidDismissScreen:(GADInterstitial *)ad {
-    NSLog(@"interstitialDidDismissScreen");
-    [_radio play];
-    [self updateAlbumArt];
-}
-
-/// Tells the delegate that a user click will open another app
-/// (such as the App Store), backgrounding the current app.
-- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad {
-    NSLog(@"interstitialWillLeaveApplication");
+/// Tells the delegate that the ad dismissed full screen content.
+- (void)adDidDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
+   NSLog(@"Ad did dismiss full screen content.");
 }
 
 //--------------------------------------
@@ -406,11 +399,6 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
             {
                 self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
             }
-            [self addBannerViewToView:self.bannerView];
-            self.bannerView.adUnitID = Google_ad_banner_ID;
-            self.bannerView.rootViewController = self;
-            [self.bannerView loadRequest:[GADRequest request]];
-            self.bannerView.delegate = self;
         }
     }
 
@@ -477,7 +465,19 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     {
         if(GOOGLE_ACTIVATION)
         {
-            self.interstitial = [self createAndLoadInterstitial];
+            GADRequest *request = [GADRequest request];
+              [GADInterstitialAd loadWithAdUnitID:Google_ad_interstitial_ID
+                                          request:request
+                                completionHandler:^(GADInterstitialAd *ad, NSError *error) {
+                if (error) {
+                  NSLog(@"Failed to load interstitial ad with error: %@", [error localizedDescription]);
+                  return;
+                }
+                self.interstitial = ad;
+                self.interstitial.fullScreenContentDelegate = self;
+              }];
+
+            [self streamerPlay];
         }
         else
         {
@@ -501,7 +501,11 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     }
     else if(!GOOGLE_ACTIVATION)
     {
-        [self streamerPlay];
+        if (self.interstitial && GOOGLE_ACTIVATION) {
+            [self.interstitial presentFromRootViewController:self];
+          } else {
+            NSLog(@"Ad wasn't ready");
+        }
     }
 
     if ([Station_Title isEqualToString:@"NRJ"] || [Station_Title isEqualToString:@"Rire et Chansons"] || [Station_Title isEqualToString:@"CherieFM"] || [Station_Title isEqualToString:@"RMC"] || [Station_Title isEqualToString:@"FranceINFO"] || [Station_Title isEqualToString:@"FranceINTER"] || [Station_Title isEqualToString:@"Mouv'"] || [Station_Title isEqualToString:@"Nostalgie"] || [Station_Title isEqualToString:@"Fip"] || [Station_Title isEqualToString:@"Radio Nova"] || [Station_Title isEqualToString:@"Antenna 1"])
@@ -697,22 +701,6 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     [defaults synchronize];
 }
 
-- (GADInterstitial *)createAndLoadInterstitial {
-    GADInterstitial *interstitial = [[GADInterstitial alloc] initWithAdUnitID:Google_ad_interstitial_ID];
-    interstitial.delegate = self;
-    [interstitial loadRequest:[GADRequest request]];
-    return interstitial;
-}
-
-- (GADRequest *)request
-{
-    GADRequest *request = [GADRequest request];
-    request.testDevices = @[
-        kGADSimulatorID
-    ];
-    return request;
-}
-
 - (void)adViewDidReceiveAd:(GADBannerView *)adView
 {
     NSLog(@"Received ad successfully");
@@ -721,11 +709,6 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     [UIView animateWithDuration:1.0 animations:^{
         adView.alpha = 1;
     }];
-}
-
-- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error
-{
-    NSLog(@"Failed to receive ad with error: %@", [error localizedFailureReason]);
 }
 
 - (void)stopPlayer:(NSNotification *)notification
@@ -802,6 +785,11 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     else
     {
         [_radio play];
+        if (self.interstitial && GOOGLE_ACTIVATION) {
+            [self.interstitial presentFromRootViewController:self];
+          } else {
+            NSLog(@"Ad wasn't ready");
+        }
     }
 }
 

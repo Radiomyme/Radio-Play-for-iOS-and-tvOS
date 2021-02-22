@@ -10,7 +10,6 @@
 #import "Level1ViewController.h"
 #import "PlayerViewController.h"
 #import "Settings.h"
-#import <OneSignal/OneSignal.h>
 #import <StoreKit/StoreKit.h>
 
 @import GoogleMobileAds;
@@ -171,10 +170,6 @@ int UpdatePerformed = 0;
     }else{
         [self updateDatabasevoid];
     }
-    
-    //Notifications
-    
-    [OneSignal initWithLaunchOptions:launchOptions appId:OneSignal_ID];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(pushCategories:)

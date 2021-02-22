@@ -22,6 +22,12 @@
 		364892661E0BF55C0079F332 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 364892631E0BF55C0079F332 /* share.png */; };
 		364892671E0BF55C0079F332 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364892641E0BF55C0079F332 /* share@2x.png */; };
 		364892681E0BF55C0079F332 /* share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364892651E0BF55C0079F332 /* share@3x.png */; };
+		3650CCBC25E429C2009684E4 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3650CCB625E429C1009684E4 /* nanopb.xcframework */; };
+		3650CCBD25E429C2009684E4 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3650CCB725E429C1009684E4 /* GoogleUtilities.xcframework */; };
+		3650CCBE25E429C2009684E4 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3650CCB825E429C2009684E4 /* PromisesObjC.xcframework */; };
+		3650CCBF25E429C2009684E4 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3650CCB925E429C2009684E4 /* GoogleAppMeasurement.xcframework */; };
+		3650CCC025E429C2009684E4 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3650CCBA25E429C2009684E4 /* GoogleMobileAds.xcframework */; };
+		3650CCC125E429C2009684E4 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3650CCBB25E429C2009684E4 /* UserMessagingPlatform.xcframework */; };
 		365221641C98BAA60061AD3E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641D5F211864C47E00383568 /* AdSupport.framework */; };
 		365221661C98BAB50061AD3E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365221651C98BAB50061AD3E /* CoreMotion.framework */; };
 		36532A651DD248AB006FBDA6 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 36532A321DD248AB006FBDA6 /* about.png */; };
@@ -66,14 +72,6 @@
 		3663090C1A8BB0920074ACA6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3663090B1A8BB0920074ACA6 /* MainWindow.xib */; };
 		3689727D1BB58CF40083AE46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3689727C1BB58CF40083AE46 /* InfoPlist.strings */; };
 		369052B323B629510059785A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 369052B223B629510059785A /* GoogleService-Info.plist */; };
-		369A51272491406000FBBD3C /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A511F2491406000FBBD3C /* OneSignal.framework */; };
-		369A51282491406000FBBD3C /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A51202491406000FBBD3C /* GoogleUtilities.framework */; };
-		369A51292491406000FBBD3C /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A51212491406000FBBD3C /* nanopb.framework */; };
-		369A512A2491406000FBBD3C /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A51222491406000FBBD3C /* GoogleMobileAds.framework */; };
-		369A512B2491406000FBBD3C /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A51232491406000FBBD3C /* GoogleAppMeasurement.framework */; };
-		369A512C2491406000FBBD3C /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A51242491406000FBBD3C /* nanopb.xcframework */; };
-		369A512D2491406000FBBD3C /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A51252491406000FBBD3C /* GoogleUtilities.xcframework */; };
-		369A512E2491406000FBBD3C /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A51262491406000FBBD3C /* PromisesObjC.xcframework */; };
 		369D51761DEC9F0800788065 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369D51751DEC9F0800788065 /* PlayerViewController.xib */; };
 		369D51791DEC9F4700788065 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369D51781DEC9F4700788065 /* PlayerViewController.m */; };
 		369D517D1DECA37100788065 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 369D517A1DECA37100788065 /* chat.png */; };
@@ -171,6 +169,12 @@
 		364892631E0BF55C0079F332 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share.png; path = "Radio 7 Pro Core/Images/share.png"; sourceTree = SOURCE_ROOT; };
 		364892641E0BF55C0079F332 /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@2x.png"; path = "Radio 7 Pro Core/Images/share@2x.png"; sourceTree = SOURCE_ROOT; };
 		364892651E0BF55C0079F332 /* share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@3x.png"; path = "Radio 7 Pro Core/Images/share@3x.png"; sourceTree = SOURCE_ROOT; };
+		3650CCB625E429C1009684E4 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = "Radio 7 Pro Core/Ads/nanopb.xcframework"; sourceTree = "<group>"; };
+		3650CCB725E429C1009684E4 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = "Radio 7 Pro Core/Ads/GoogleUtilities.xcframework"; sourceTree = "<group>"; };
+		3650CCB825E429C2009684E4 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = "Radio 7 Pro Core/Ads/PromisesObjC.xcframework"; sourceTree = "<group>"; };
+		3650CCB925E429C2009684E4 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = "Radio 7 Pro Core/Ads/GoogleAppMeasurement.xcframework"; sourceTree = "<group>"; };
+		3650CCBA25E429C2009684E4 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Radio 7 Pro Core/Ads/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		3650CCBB25E429C2009684E4 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = "Radio 7 Pro Core/Ads/UserMessagingPlatform.xcframework"; sourceTree = "<group>"; };
 		365221651C98BAB50061AD3E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		36532A321DD248AB006FBDA6 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about.png; path = "Radio 7 Pro Core/Images/about.png"; sourceTree = SOURCE_ROOT; };
 		36532A331DD248AB006FBDA6 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "about@2x.png"; path = "Radio 7 Pro Core/Images/about@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -214,14 +218,6 @@
 		3663090B1A8BB0920074ACA6 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		3689727C1BB58CF40083AE46 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		369052B223B629510059785A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		369A511F2491406000FBBD3C /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = "Radio 7 Pro Core/Ads/OneSignal.framework"; sourceTree = "<group>"; };
-		369A51202491406000FBBD3C /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "Radio 7 Pro Core/Ads/GoogleUtilities.framework"; sourceTree = "<group>"; };
-		369A51212491406000FBBD3C /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "Radio 7 Pro Core/Ads/nanopb.framework"; sourceTree = "<group>"; };
-		369A51222491406000FBBD3C /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Radio 7 Pro Core/Ads/GoogleMobileAds.framework"; sourceTree = "<group>"; };
-		369A51232491406000FBBD3C /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "Radio 7 Pro Core/Ads/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
-		369A51242491406000FBBD3C /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = "Radio 7 Pro Core/Ads/nanopb.xcframework"; sourceTree = "<group>"; };
-		369A51252491406000FBBD3C /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = "Radio 7 Pro Core/Ads/GoogleUtilities.xcframework"; sourceTree = "<group>"; };
-		369A51262491406000FBBD3C /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = "Radio 7 Pro Core/Ads/PromisesObjC.xcframework"; sourceTree = "<group>"; };
 		369D51751DEC9F0800788065 /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = "Radio 7 Pro Core/Xibs/PlayerViewController.xib"; sourceTree = SOURCE_ROOT; };
 		369D51771DEC9F4700788065 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerViewController.h; path = "Radio 7 Pro Core/Class Files/PlayerViewController.h"; sourceTree = SOURCE_ROOT; };
 		369D51781DEC9F4700788065 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerViewController.m; path = "Radio 7 Pro Core/Class Files/PlayerViewController.m"; sourceTree = SOURCE_ROOT; };
@@ -347,31 +343,29 @@
 				641D5F261864C4B600383568 /* AVFoundation.framework in Frameworks */,
 				64B2AA5F1A6784FC00E9BD60 /* CoreTelephony.framework in Frameworks */,
 				362139491DF6062A0007CC46 /* CoreData.framework in Frameworks */,
-				369A51282491406000FBBD3C /* GoogleUtilities.framework in Frameworks */,
-				369A512B2491406000FBBD3C /* GoogleAppMeasurement.framework in Frameworks */,
 				365221661C98BAB50061AD3E /* CoreMotion.framework in Frameworks */,
+				3650CCBE25E429C2009684E4 /* PromisesObjC.xcframework in Frameworks */,
 				365221641C98BAA60061AD3E /* AdSupport.framework in Frameworks */,
 				64205894162CF68300921914 /* AudioToolbox.framework in Frameworks */,
+				3650CCC025E429C2009684E4 /* GoogleMobileAds.xcframework in Frameworks */,
 				64205898162CF69A00921914 /* CFNetwork.framework in Frameworks */,
 				64205890162CF65500921914 /* CoreGraphics.framework in Frameworks */,
 				640249A8181B735D00570B74 /* CoreImage.framework in Frameworks */,
-				369A51292491406000FBBD3C /* nanopb.framework in Frameworks */,
 				64B2AA5B1A67849400E9BD60 /* EventKit.framework in Frameworks */,
 				64B2AA5D1A6784AD00E9BD60 /* EventKitUI.framework in Frameworks */,
+				3650CCBD25E429C2009684E4 /* GoogleUtilities.xcframework in Frameworks */,
 				6420588C162CF64200921914 /* Foundation.framework in Frameworks */,
-				369A512C2491406000FBBD3C /* nanopb.xcframework in Frameworks */,
 				64C9A3DA1861F25B0093D9A8 /* ImageIO.framework in Frameworks */,
-				369A51272491406000FBBD3C /* OneSignal.framework in Frameworks */,
+				3650CCBF25E429C2009684E4 /* GoogleAppMeasurement.xcframework in Frameworks */,
 				64205892162CF67D00921914 /* MediaPlayer.framework in Frameworks */,
 				36D069771DECB2C00025B7B7 /* StoreKit.framework in Frameworks */,
 				641D5F281864C4C900383568 /* MessageUI.framework in Frameworks */,
 				64BE601718A7462700699659 /* libxml2.dylib in Frameworks */,
+				3650CCC125E429C2009684E4 /* UserMessagingPlatform.xcframework in Frameworks */,
 				64205896162CF68D00921914 /* QuartzCore.framework in Frameworks */,
-				369A512D2491406000FBBD3C /* GoogleUtilities.xcframework in Frameworks */,
 				6420589A162CF6A900921914 /* SystemConfiguration.framework in Frameworks */,
-				369A512A2491406000FBBD3C /* GoogleMobileAds.framework in Frameworks */,
-				369A512E2491406000FBBD3C /* PromisesObjC.xcframework in Frameworks */,
 				36CA85B9232969960074ECF4 /* MediaPlayer.framework in Frameworks */,
+				3650CCBC25E429C2009684E4 /* nanopb.xcframework in Frameworks */,
 				6420588E162CF64C00921914 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,14 +412,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				369A51232491406000FBBD3C /* GoogleAppMeasurement.framework */,
-				369A51222491406000FBBD3C /* GoogleMobileAds.framework */,
-				369A51202491406000FBBD3C /* GoogleUtilities.framework */,
-				369A51252491406000FBBD3C /* GoogleUtilities.xcframework */,
-				369A51212491406000FBBD3C /* nanopb.framework */,
-				369A51242491406000FBBD3C /* nanopb.xcframework */,
-				369A511F2491406000FBBD3C /* OneSignal.framework */,
-				369A51262491406000FBBD3C /* PromisesObjC.xcframework */,
+				3650CCB925E429C2009684E4 /* GoogleAppMeasurement.xcframework */,
+				3650CCBA25E429C2009684E4 /* GoogleMobileAds.xcframework */,
+				3650CCB725E429C1009684E4 /* GoogleUtilities.xcframework */,
+				3650CCB625E429C1009684E4 /* nanopb.xcframework */,
+				3650CCB825E429C2009684E4 /* PromisesObjC.xcframework */,
+				3650CCBB25E429C2009684E4 /* UserMessagingPlatform.xcframework */,
 				362139481DF6062A0007CC46 /* CoreData.framework */,
 				36D069761DECB2C00025B7B7 /* StoreKit.framework */,
 				365221651C98BAB50061AD3E /* CoreMotion.framework */,
@@ -977,10 +969,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 12.0.3.120;
+				CURRENT_PROJECT_VERSION = 12.1.4.128;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8A4M4QND2E;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
@@ -1023,7 +1016,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio 7 Pro Core/Vendors/GoogleAdMobAdsSdk\"";
-				MARKETING_VERSION = 8.1;
+				MARKETING_VERSION = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1037,7 +1030,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "x86_64 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1052,10 +1045,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 12.0.3.120;
+				CURRENT_PROJECT_VERSION = 12.1.4.128;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8A4M4QND2E;
 				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)/Radio\\ 7\\ Pro\\ Core/Ads",
@@ -1095,7 +1089,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio 7 Pro Core/Vendors/GoogleAdMobAdsSdk\"";
-				MARKETING_VERSION = 8.1;
+				MARKETING_VERSION = 9.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1108,7 +1102,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "x86_64 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
