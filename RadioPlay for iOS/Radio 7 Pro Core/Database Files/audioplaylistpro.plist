@@ -8,7 +8,7 @@
 			<key>Radio Name</key>
 			<string>FranceINTER</string>
 			<key>Radio Stream URL</key>
-			<string>http://direct.franceinter.fr/live/franceinter-midfi.mp3</string>
+			<string>http://icecast.radiofrance.fr/franceinter-midfi.mp3</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -26,7 +26,7 @@
 			<key>Radio Name</key>
 			<string>RTL</string>
 			<key>Radio Stream URL</key>
-			<string>http://streaming.radio.rtl.fr/rtl-1-44-96</string>
+			<string>http://streaming.radio.rtl.fr/rtl-1-44-128</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -44,7 +44,7 @@
 			<key>Radio Name</key>
 			<string>NRJ</string>
 			<key>Radio Stream URL</key>
-			<string>http://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3?origine=fluxradios</string>
+			<string>http://scdn.nrjaudio.fm/adwz2/fr/30001/mp3_128.mp3</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -62,7 +62,7 @@
 			<key>Radio Name</key>
 			<string>FranceINFO</string>
 			<key>Radio Stream URL</key>
-			<string>http://direct.franceinfo.fr/live/franceinfo-midfi.mp3</string>
+			<string>http://icecast.radiofrance.fr/franceinfo-midfi.mp3</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -80,7 +80,7 @@
 			<key>Radio Name</key>
 			<string>RMC</string>
 			<key>Radio Stream URL</key>
-			<string>http://chai5she.cdn.dvmr.fr/rmcinfo</string>
+			<string>http://rmc.bfmtv.com/rmcinfo-mp3</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -98,7 +98,7 @@
 			<key>Radio Name</key>
 			<string>Europe1</string>
 			<key>Radio Stream URL</key>
-			<string>http://mp3lg3.scdn.arkena.com/10489/europe1.mp3</string>
+			<string>http://stream.europe1.fr/europe1.mp3</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -116,7 +116,7 @@
 			<key>Radio Name</key>
 			<string>Nostalgie</string>
 			<key>Radio Stream URL</key>
-			<string>http://cdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3?origine=fluxradios</string>
+			<string> http://scdn.nrjaudio.fm/adwz2/fr/30601/mp3_128.mp3</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -152,7 +152,7 @@
 			<key>Radio Name</key>
 			<string>Funradio</string>
 			<key>Radio Stream URL</key>
-			<string>http://streaming.radio.funradio.fr/fun-1-48-192</string>
+			<string>http://icecast.funradio.fr/fun-1-44-128</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>
@@ -170,7 +170,7 @@
 			<key>Radio Name</key>
 			<string>RTL2</string>
 			<key>Radio Stream URL</key>
-			<string>http://streaming.radio.rtl2.fr:80/rtl2-1-44-96</string>
+			<string>http://icecast.rtl2.fr/rtl2-1-44-128</string>
 			<key>Radio Stream M3U8</key>
 			<string></string>
 			<key>Background Image</key>

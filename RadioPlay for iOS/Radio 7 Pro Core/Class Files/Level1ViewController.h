@@ -12,7 +12,7 @@
 
 @class PlayerViewController, AppDelegate;
 
-@interface Level1ViewController : UIViewController <UIViewControllerPreviewingDelegate, UISearchResultsUpdating, UISearchBarDelegate, SFSafariViewControllerDelegate>
+@interface Level1ViewController : UIViewController <UIViewControllerPreviewingDelegate, UISearchResultsUpdating, UISearchBarDelegate, SFSafariViewControllerDelegate, GADBannerViewDelegate>
 {
 	NSArray					*listContent;
     NSArray					*filteredListContent;

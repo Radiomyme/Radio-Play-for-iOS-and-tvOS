@@ -128,6 +128,27 @@ static void InterruptionListenerCallback(void *inUserData, UInt32 interruptionSt
 //------------ GOOGLE ADMOB  -----------
 //--------------------------------------
 
+- (void)addBannerViewToView:(UIView *)bannerView {
+  bannerView.translatesAutoresizingMaskIntoConstraints = NO;
+  [self.view addSubview:bannerView];
+  [self.view addConstraints:@[
+    [NSLayoutConstraint constraintWithItem:bannerView
+                               attribute:NSLayoutAttributeBottom
+                               relatedBy:NSLayoutRelationEqual
+                                  toItem:self.bottomLayoutGuide
+                               attribute:NSLayoutAttributeTop
+                              multiplier:1
+                                constant:0],
+    [NSLayoutConstraint constraintWithItem:bannerView
+                               attribute:NSLayoutAttributeCenterX
+                               relatedBy:NSLayoutRelationEqual
+                                  toItem:self.view
+                               attribute:NSLayoutAttributeCenterX
+                              multiplier:1
+                                constant:0]
+                                ]];
+}
+
 - (void)viewWillTransitionToSize:(CGSize)size
     withTransitionCoordinator:(id)coordinator {
   [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
@@ -216,12 +237,46 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
 /// Tells the delegate that the ad presented full screen content.
 - (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
     NSLog(@"Ad did present full screen content.");
-    [self streamerPlay];
+    [_radio pause];
 }
 
 /// Tells the delegate that the ad dismissed full screen content.
 - (void)adDidDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad {
-   NSLog(@"Ad did dismiss full screen content.");
+    NSLog(@"Ad did dismiss full screen content.");
+    [_radio play];
+    [self updateAlbumArt];
+}
+
+/// Tells the delegate an ad request loaded an ad.
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    NSLog(@"adViewDidReceiveAd");
+    [self addBannerViewToView:self.bannerView];
+    adView.alpha = 0;
+    [UIView animateWithDuration:1.0 animations:^{
+        adView.alpha = 1;
+    }];
+}
+
+/// Tells the delegate that a full-screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+  NSLog(@"adViewWillPresentScreen");
+}
+
+/// Tells the delegate that the full-screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+  NSLog(@"adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full-screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+  NSLog(@"adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+  NSLog(@"adViewWillLeaveApplication");
 }
 
 //--------------------------------------
@@ -310,6 +365,13 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     [self becomeFirstResponder];
 
     CGSize result = [[UIScreen mainScreen] bounds].size;
+
+    // Load the Player banner only if the banner is enabled and the ads are not removed
+
+    if(GOOGLE_BANNER && !areAdsRemoved)
+    {
+        [self loadBannerAd];
+    }
 }
 
 - (BOOL)canBecomeFirstResponder
@@ -399,6 +461,14 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
             {
                 self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
             }
+
+            // Banner
+
+            [self addBannerViewToView:self.bannerView];
+            self.bannerView.adUnitID = Google_ad_banner_ID;
+            self.bannerView.rootViewController = self;
+            [self.bannerView loadRequest:[GADRequest request]];
+            self.bannerView.delegate = self;
         }
     }
 
@@ -465,6 +535,8 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     {
         if(GOOGLE_ACTIVATION)
         {
+            // Interstitial
+
             GADRequest *request = [GADRequest request];
               [GADInterstitialAd loadWithAdUnitID:Google_ad_interstitial_ID
                                           request:request
@@ -476,8 +548,6 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
                 self.interstitial = ad;
                 self.interstitial.fullScreenContentDelegate = self;
               }];
-
-            [self streamerPlay];
         }
         else
         {
@@ -495,18 +565,7 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
 
     //end Ads
 
-    if(GOOGLE_ACTIVATION && areAdsRemoved)
-    {
-        [self streamerPlay];
-    }
-    else if(!GOOGLE_ACTIVATION)
-    {
-        if (self.interstitial && GOOGLE_ACTIVATION) {
-            [self.interstitial presentFromRootViewController:self];
-          } else {
-            NSLog(@"Ad wasn't ready");
-        }
-    }
+    [self streamerPlay];
 
     if ([Station_Title isEqualToString:@"NRJ"] || [Station_Title isEqualToString:@"Rire et Chansons"] || [Station_Title isEqualToString:@"CherieFM"] || [Station_Title isEqualToString:@"RMC"] || [Station_Title isEqualToString:@"FranceINFO"] || [Station_Title isEqualToString:@"FranceINTER"] || [Station_Title isEqualToString:@"Mouv'"] || [Station_Title isEqualToString:@"Nostalgie"] || [Station_Title isEqualToString:@"Fip"] || [Station_Title isEqualToString:@"Radio Nova"] || [Station_Title isEqualToString:@"Antenna 1"])
     {
@@ -701,16 +760,6 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     [defaults synchronize];
 }
 
-- (void)adViewDidReceiveAd:(GADBannerView *)adView
-{
-    NSLog(@"Received ad successfully");
-    [self addBannerViewToView:self.bannerView];
-    adView.alpha = 0;
-    [UIView animateWithDuration:1.0 animations:^{
-        adView.alpha = 1;
-    }];
-}
-
 - (void)stopPlayer:(NSNotification *)notification
 {
     if(_radio) {
@@ -718,11 +767,6 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
         [_radio shutdown];
         [_radio release];
         _radio = nil;
-    }
-
-    if([pub  isEqual: @"ON"])
-    {
-        [self streamerPlay];
     }
 }
 

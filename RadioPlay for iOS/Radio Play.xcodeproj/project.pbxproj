@@ -969,7 +969,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 12.1.4.128;
+				CURRENT_PROJECT_VERSION = 12.2.5.350;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8A4M4QND2E;
 				ENABLE_BITCODE = NO;
@@ -1017,7 +1017,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio 7 Pro Core/Vendors/GoogleAdMobAdsSdk\"";
 				MARKETING_VERSION = 9.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lxml2",
@@ -1045,7 +1045,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 12.1.4.128;
+				CURRENT_PROJECT_VERSION = 12.2.5.350;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8A4M4QND2E;
 				ENABLE_BITCODE = NO;
@@ -1090,7 +1090,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio 7 Pro Core/Vendors/GoogleAdMobAdsSdk\"";
 				MARKETING_VERSION = 9.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lxml2",

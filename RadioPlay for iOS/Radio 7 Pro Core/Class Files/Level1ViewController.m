@@ -69,10 +69,33 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
 }
 
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
-  adView.alpha = 0;
-  [UIView animateWithDuration:1.0 animations:^{
-    adView.alpha = 1;
-  }];
+    [self addBannerViewToView:self.bannerView];
+    adView.alpha = 0;
+    [UIView animateWithDuration:1.0 animations:^{
+        adView.alpha = 1;
+    }];
+}
+
+/// Tells the delegate that a full-screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+  NSLog(@"adViewWillPresentScreen");
+}
+
+/// Tells the delegate that the full-screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+  NSLog(@"adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full-screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+  NSLog(@"adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+  NSLog(@"adViewWillLeaveApplication");
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size
@@ -210,17 +233,24 @@ static const CGFloat kWallpaperImageSideMargin = 55.0f;
     
     [self setupSearchBar];
 
-    // Google AdMob Banner - Home
+    // Google Request IDFA
 
     [self requestIDFA];
+
+    // Google AdMob Banner - Home
 
     if(GOOGLE_BANNER_HOME)
     {
         if(!areAdsRemoved)
         {
+            self.bannerView = [[GADBannerView alloc]
+                  initWithAdSize:kGADAdSizeBanner];
+            [self addBannerViewToView:self.bannerView];
             self.bannerView.adUnitID = Google_ad_banner_Home_ID;
             self.bannerView.rootViewController = self;
+            [self.bannerView loadRequest:[GADRequest request]];
             [self loadBannerAd];
+            self.bannerView.delegate = self;
         }
     }
 }
