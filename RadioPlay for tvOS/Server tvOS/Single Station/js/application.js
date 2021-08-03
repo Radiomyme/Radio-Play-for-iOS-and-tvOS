@@ -1,7 +1,5 @@
-//# sourceURL=application.js
-
 /*
-Copyright (C) 2015 Hani Hamrouni. All Rights Reserved.
+Copyright (C) 2017 Radiomyme. All Rights Reserved.
 
 */
 

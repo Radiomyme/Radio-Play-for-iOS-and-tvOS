@@ -40,6 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         
         // Create the TVApplicationControllerContext for this application and set the properties that will be passed to the `App.onLaunch` function in JavaScript.
         let appControllerContext = TVApplicationControllerContext()
+
+        if #available(tvOS 14.0, *) {
+            appControllerContext.supportsPictureInPicturePlayback = false
+        } else {
+            // Fallback on earlier versions
+        }
         
         // The JavaScript URL is used to create the JavaScript context for your TVMLKit application. Although it is possible to separate your JavaScript into separate files, to help reduce the launch time of your application we recommend creating minified and compressed version of this resource. This will allow for the resource to be retrieved and UI presented to the user quickly.
         if let javaScriptURL = URL(string: AppDelegate.tvBootURL) {

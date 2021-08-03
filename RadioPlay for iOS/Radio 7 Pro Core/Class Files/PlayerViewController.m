@@ -320,7 +320,6 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
 - (void)streamerPlay
 {
     [downloadSourceField resignFirstResponder];
-
     [self createStreamer];
 }
 
@@ -371,6 +370,12 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     if(GOOGLE_BANNER && !areAdsRemoved)
     {
         [self loadBannerAd];
+    }
+
+    if (self.interstitial && GOOGLE_ACTIVATION) {
+        [self.interstitial presentFromRootViewController:self];
+      } else {
+        NSLog(@"Ad wasn't ready");
     }
 }
 
@@ -449,29 +454,6 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     self.slider.hidden = YES;
     self.airplay.hidden = NO;
 
-    if(GOOGLE_BANNER)
-    {
-        if(!areAdsRemoved)
-        {
-            if(GOOGLE_BANNER_Rectangle)
-            {
-                self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeMediumRectangle];
-            }
-            else
-            {
-                self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
-            }
-
-            // Banner
-
-            [self addBannerViewToView:self.bannerView];
-            self.bannerView.adUnitID = Google_ad_banner_ID;
-            self.bannerView.rootViewController = self;
-            [self.bannerView loadRequest:[GADRequest request]];
-            self.bannerView.delegate = self;
-        }
-    }
-
     if(Activate_Volume_Slider)
     {
         self.slider.hidden = NO;
@@ -525,6 +507,29 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     //Ads
     //
     //Tips : To activate or not the ads please go in Settings.m
+
+    if(GOOGLE_BANNER)
+    {
+        if(!areAdsRemoved)
+        {
+            if(GOOGLE_BANNER_Rectangle)
+            {
+                self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeMediumRectangle];
+            }
+            else
+            {
+                self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+            }
+
+            // Banner
+
+            [self addBannerViewToView:self.bannerView];
+            self.bannerView.adUnitID = Google_ad_banner_ID;
+            self.bannerView.rootViewController = self;
+            [self.bannerView loadRequest:[GADRequest request]];
+            self.bannerView.delegate = self;
+        }
+    }
 
     if(areAdsRemoved)
     {
@@ -779,6 +784,11 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     else
     {
         [_radio play];
+        if (self.interstitial && GOOGLE_ACTIVATION) {
+            [self.interstitial presentFromRootViewController:self];
+          } else {
+            NSLog(@"Ad wasn't ready");
+        }
     }
 }
 
@@ -989,20 +999,17 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     else if(state == kRadioStatePlaying) {
 
         [[NSNotificationCenter defaultCenter] postNotificationName:@"isPlaying" object:nil];
-
         [self setButtonImage:[UIImage imageNamed:@"pausebtn.png"]];
 
         [UILabel beginAnimations:nil context:NULL];
         [bufferingLabel setAlpha:0.2];
 
         NSUserDefaults *playerStatus = [NSUserDefaults standardUserDefaults];
-
         [playerStatus setObject:@"Playing" forKey:@"Player"];
     }
     else if(state == kRadioStateStopped) {
 
         [[NSNotificationCenter defaultCenter] postNotificationName:@"isNotPlaying" object:nil];
-
         [self setButtonImage:[UIImage imageNamed:@"playbtn.png"]];
 
         [UILabel beginAnimations:nil context:NULL];
@@ -1011,7 +1018,6 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
         [UILabel commitAnimations];
 
         NSUserDefaults *playerStatus = [NSUserDefaults standardUserDefaults];
-
         [playerStatus setObject:@"Stopped" forKey:@"Player"];
 
         [self defaultalbumart];
@@ -1021,14 +1027,12 @@ didFailToPresentFullScreenContentWithError:(nonnull NSError *)error {
     else if(state == kRadioStateError) {
 
         [[NSNotificationCenter defaultCenter] postNotificationName:@"isNotPlaying" object:nil];
-
         [self setButtonImage:[UIImage imageNamed:@"playbtn.png"]];
 
         [UILabel beginAnimations:nil context:NULL];
         [bufferingLabel setAlpha:0.2];
 
         NSUserDefaults *playerStatus = [NSUserDefaults standardUserDefaults];
-
         [playerStatus setObject:@"Stopped" forKey:@"Player"];
     }
 

@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2015 Hani Hamrouni. All Rights Reserved.
+Copyright (C) 2017 Radiomyme. All Rights Reserved.
 
 */
 /**
@@ -35,7 +35,7 @@ ResourceLoader.prototype.loadResource = function(resource, callback) {
      */
     evaluateScripts([resource], function(success) {
         if (success) {
-            var resource = Template.call(self);
+            var resource = Template.call(self, myVideoDictionary);
             callback.call(self, resource);
         } else {
             var title = "Resource Loader Error",
